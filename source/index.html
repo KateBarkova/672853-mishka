@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-nav__logo">
-          <img src="img/logo.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          <img class="main-nav__logo-image" src="img/logo.svg" alt="Логотип магазина Мишка" width="86" height="35">
         </a>
         <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
@@ -47,8 +47,8 @@
         </ul>
       </section>
       <section class="product-week">
-        <h3 class="product-week__title ">Товар недели</h3>
         <h3 class="product-week__name title">Вязаные корзинки</h3>
+        <h4 class="product-week__title ">Товар недели</h4>
         <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product-week__property">
           <tr class="product-week__row">
@@ -69,7 +69,7 @@
           Цена
           <span class="product-week__price">990 руб.</span>
         </p>
-        <button class="product-week__order button" type="button">Заказать</button>
+        <button class="product-week__btn button" type="button">Заказать</button>
       </section>
       <section class="about-us">
         <h3 class="about-us__title title">Коротко о нас</h3>
@@ -93,8 +93,8 @@
             </p>
           </li>
         </ul>
-        <button class="feedback__back" type="button">Назад</button>
-        <button class="feedback__next" type="button">Вперед</button>
+        <button class="feedback__back buttton button--direction" type="button">Назад</button>
+        <button class="feedback__next buttton button--direction" type="button">Вперед</button>
         <a href="#" class="feedback__write button">Написать</a>
       </section>
       <section class="contacts">
@@ -108,9 +108,9 @@
           </tr>
           <tr class="contacts__adress">
             <td class="contacts__cell">адрес:</td>
-            <td class="contacts__cell">г. Санкт-Петербург, <br>
-            ул. Большая Конюшенная, <br>
-            д. 19/8, офис 101</td>
+            <td class="contacts__cell">г. Санкт-Петербург,
+              ул. Большая Конюшенная,
+              д. 19/8, офис 101</td>
           </tr>
         </table>
         <div class="contacts__map">Карта</div>
@@ -136,13 +136,24 @@
     </footer>
     <section class="cart">
       <h3 class="cart__title title">Добавить в корзину</h3>
-      <p class="cart__text">Выберите размер:</p>
-      <ul class="cart__size-list">
-        <li class="cart__item"><button class="cart__btn" type="button">S</button></li>
-        <li class="cart__item"><button class="cart__btn" type="button">M</button></li>
-        <li class="cart__item"><button class="cart__btn" type="button">L</button></li>
-      </ul>
-      <button class="cart__add" type="button">Добавить</button>
+      <form class="cart__form">
+        <fieldset class="cart__text">Выберите размер:</fieldset>
+        <ul class="cart__size-list">
+          <li class="cart__item">
+            <input class="visually-hidden" type="radio" name="cart" id="size-s" value="size s">
+            <label class="cart__size-s" for="size-s">S</label>
+          </li>
+          <li class="cart__item">
+            <input class="visually-hidden" type="radio" name="cart" id="size-m" value="size m">
+            <label class="cart__size-m" for="size-m">M</label>
+          </li>
+          <li class="cart__item">
+            <input class="visually-hidden" type="radio" name="cart" id="size-l" value="size l">
+            <label class="cart__size-l" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="cart__add button button--order" type="submit">Добавить</button>
+      </form>
     </section>
   </body>
 </html>
