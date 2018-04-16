@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo"  href="index.html">
+          <img class="main-nav__logo-image" src="img/logo.svg" alt="Логотип магазина Мишка" width="86" height="35">
+        </a>
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active">Каталог товаров</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Поиск по сайту</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">
+                Корзина:
+                <span class="main-menu__cart">пока пуста</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-catalog">
+      <h1 class="main-catalog__title">Каталог товаров</h1>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item product">
+            <img class="product__photo" src="img/rabbit.jpg" alt="Фото товара" width="260" height="195">
+            <h2 class="product__title">Зайчик-попрыгайчик</h2>
+            <p class="product__feature">Рост 30 см, вес 200 г</p>
+            <p class="product__price">1 200 руб.</p>
+            <button class="product__cart" type="button">Добавить в корзину</button>
+          </li>
+          <li class="catalog__item product">
+            <img class="product__photo" src="img/basket.jpg" alt="Фото товара" width="260" height="195">
+            <h2 class="product__title">Корзинка для белья</h2>
+            <p class="product__feature">Диаметр 15 см, высота 10 см</p>
+            <p class="product__price">690 руб.</p>
+            <button class="product__cart" type="button">Добавить в корзину</button>
+          </li>
+          <li class="catalog__item product">
+            <img class="product__photo" src="img/big-basket.jpg" alt="Фото товара" width="260" height="195">
+            <h2 class="product__title">Большая корзинка для игрушек</h2>
+            <p class="product__feature">Диаметр 30 см, высота 30 см</p>
+            <p class="product__price">1500 руб.</p>
+            <button class="product__cart" type="button">Добавить в корзину</button>
+          </li>
+        </ul>
+      </section>
+      <section class="making">
+        <h2 class="making__title">Процесс производства</h2>
+        <video class="making__video"><source src="#"></video>
+        <img class="making__image" src="img/video.jpg" alt="Процесс производства" width="260" height="150">
+        <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="#" class="making__order button">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__list social">
+        <li class="social__item">
+          <a href="#" class="social__btn social__btn--instagram">Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__btn social__btn--fb">Фэйсбук</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__btn social__btn--twitter">Твиттер</a>
+        </li>
+      </ul>
+      <p class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html-Academy</a>
+      </p>
+    </footer>
+    <section class="cart">
+      <h3 class="cart__title title">Добавить в корзину</h3>
+      <form class="cart__form">
+        <fieldset class="cart__text">Выберите размер:</fieldset>
+        <ul class="cart__size-list">
+          <li class="cart__item">
+            <input class="visually-hidden" type="radio" name="cart" id="size-s" value="size s">
+            <label class="cart__size-s" for="size-s">S</label>
+          </li>
+          <li class="cart__item">
+            <input class="visually-hidden" type="radio" name="cart" id="size-m" value="size m">
+            <label class="cart__size-m" for="size-m">M</label>
+          </li>
+          <li class="cart__item">
+            <input class="visually-hidden" type="radio" name="cart" id="size-l" value="size l">
+            <label class="cart__size-l" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="cart__add button button--order" type="submit">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
