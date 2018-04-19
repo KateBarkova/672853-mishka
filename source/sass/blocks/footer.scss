@@ -1,0 +1,25 @@
+.footer {
+  @include section-padding;
+  background-color: $color-grey;
+}
+
+.footer__list {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include list-style;
+  padding-top: 20px;
+}
+
+.copyright__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  @include font(18px, 19px);
+}

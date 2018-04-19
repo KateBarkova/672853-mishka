@@ -1,0 +1,29 @@
+.social {
+  @include list-style;
+}
+
+.social__item {
+  display: inline-block;
+}
+
+.social__btn {
+  display: block;
+  width: 35px;
+  height: 35px;
+  @include font(0,0);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--instagram {
+    background-image: url("../../img/icon-insta.svg");
+  }
+
+  &--fb {
+    background-image: url("../../img/icon-fb.svg");
+    margin: 0 30px;
+  }
+
+  &--twitter {
+    background-image: url("../../img/icon-twitter.svg");
+  }
+}

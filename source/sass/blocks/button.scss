@@ -1,0 +1,55 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  min-width: 260px;
+  @include list-style;
+  padding: 15px;
+  font: inherit;
+  @include font(17px, 20px);
+  text-transform: uppercase;
+  color: $base-color;
+  border: 2px solid #444444;
+  background-color: transparent;
+  text-align: center;
+
+  &:hover {
+    color: white;
+    background-color: #444444;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--direction {
+  display: inline-block;
+  min-width: 125px;
+  height: 52px;
+  @include font(0, 0);
+  border: 1px solid #ececec;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+
+}
+
+.button--order {
+  background-color: #63d1bb;
+  border: none;
+  color: white;
+
+  &:hover {
+    background-color: #63d1bb;
+  }
+
+  &:active {
+    background-color: #63d1bb;
+  }
+}

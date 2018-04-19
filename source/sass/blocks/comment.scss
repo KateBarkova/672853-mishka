@@ -1,0 +1,23 @@
+.comment__textarea {
+  display: block;
+  width: 100%;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  border: 2px solid $color-black;
+  @include font(17px, 18px);
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.3);
+  font-family: $base-font-family;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+    outline: none;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid #62d1ba;
+    outline: none;
+    color: $base-color;
+  }
+}

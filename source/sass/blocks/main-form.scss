@@ -1,0 +1,16 @@
+.main-form__title {
+  @include list-style;
+  padding: 75px 30px;
+  @include font(27px, 30px);
+  background-color: $color-grey;
+  text-align: center;
+}
+
+.main-form__text {
+  @include list-style;
+  @include section-padding;
+  padding-bottom: 0;
+  @include font(13px, 24px);
+  color: $base-color;
+  font-weight: 400;
+}

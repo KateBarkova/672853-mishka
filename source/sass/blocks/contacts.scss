@@ -1,0 +1,57 @@
+.contacts {
+  @include section-padding;
+}
+
+.contacts__title {
+  @include list-style;
+  margin-bottom: 30px;
+  @include font(18px, 30px);
+}
+
+.contacts__table {
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  @include font(15px, 30px);
+  font-weight: 400;
+}
+
+.contacts__row {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contacts__cell {
+  min-width: 75px;
+  vertical-align: top;
+  color: $base-color;
+
+  &--address {
+    max-width: 150px;
+  }
+}
+
+.contacts__email {
+  color: $base-color;
+  border-bottom: 1px solid #46c1ae;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__image {
+  margin-left: -30px;
+}
+
+.contacts__map {
+  margin-bottom: 30px;
+}
+
+.contacts__write {
+  @include font(18px, 20px);
+}

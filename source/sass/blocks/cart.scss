@@ -1,0 +1,42 @@
+.cart {
+  text-align: center;
+  @include section-padding;
+}
+
+.cart__title {
+  padding: 0 60px;
+}
+
+.cart__text {
+  border: none;
+  @include font(15px, 30px);
+  font-weight: 400;
+}
+
+.cart__size-list {
+  @include list-style;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.cart__size {
+  display: block;
+  padding: 15px 20px;
+  outline: 2px solid #ececec;
+  min-width: 82px;
+  box-sizing: border-box;
+}
+
+input:hover + .cart__size,
+input:focus + .cart__size {
+  outline: 2px solid #c7c7c7;
+}
+
+input:active + .cart__size {
+  outline: 2px solid #62d1ba;
+}
+
+input:checked  + .cart__size {
+  outline: 2px solid #63d1bb;
+}
