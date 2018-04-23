@@ -11,7 +11,7 @@
 .cart__text {
   border: none;
 
-  @include font(15px, 30px);
+  @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
   font-weight: 400;
 }
 

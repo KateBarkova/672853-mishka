@@ -5,11 +5,8 @@
 .main-menu__link {
   display: block;
   padding: 28px 0 28px 75px;
-
-  @include font(17px, 24px);
   text-decoration: none;
   color: black;
-
   box-shadow: $base-shadow;
 
 

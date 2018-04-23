@@ -6,8 +6,7 @@
   @include list-style;
   padding: 15px;
   font: inherit;
-
-  @include font(17px, 20px);
+  line-height: #{$base-line-height - 4px};
   text-transform: uppercase;
   color: $base-color-text;
   border: 2px solid #444444;
@@ -28,8 +27,7 @@
     display: inline-block;
     min-width: 125px;
     height: 52px;
-
-    @include font(0, 0);
+    font-size: 0;
     border: 1px solid #ececec;
 
     &:hover {
@@ -42,16 +40,16 @@
   }
 
   &--order {
-    background-color: #63d1bb;
+    background-color: $color-blue;
     border: none;
     color: white;
 
     &:hover {
-      background-color: #63d1bb;
+      background-color: $color-blue;
     }
 
     &:active {
-      background-color: #63d1bb;
+      background-color: $color-blue;
     }
   }
 }

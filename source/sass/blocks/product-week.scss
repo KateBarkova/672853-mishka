@@ -10,7 +10,7 @@
   @include list-style;
   margin-bottom: 20px;
 
-  @include font(17px, 30px);
+  @include font($base-font-size, #{$base-line-height - 4px});
   color: $color-blue;
   text-transform: uppercase;
 }
@@ -18,8 +18,7 @@
 .product-week__text {
   @include list-style;
   margin-bottom: 20px;
-
-  @include font(15px, 24px);
+  font-size: #{$base-font-size - 2px};
   font-weight: 400;
   color: $base-color-text;
 }
@@ -30,7 +29,7 @@
   @include list-style;
   margin-bottom: 30px;
 
-  @include font(15px, 20px);
+  @include font(#{$base-font-size - 2px}, #{$base-line-height - 4px});
   font-weight: 400;
   color: $base-color-text;
 }

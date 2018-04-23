@@ -5,8 +5,7 @@
 .index-catalog__link {
   display: block;
   padding: 30px 180px 30px 30px;
-
-  @include font(19px, 24px);
+  font-size: #{$base-font-size + 2px};
   color: $color-white;
   background-repeat: no-repeat;
   background-position: 80% center;

@@ -4,8 +4,7 @@
 
 .user__label {
   display: block;
-
-  @include font(17px, 18px);
+  line-height: #{$base-line-height - 6px};
 }
 
 .user__input {
@@ -14,17 +13,11 @@
   padding: 15px 0;
   border: none;
   border-bottom: 2px solid $color-black;
-
-  @include font(17px, 18px);
   font: inherit;
   font-weight: 400;
   color: $base-color-text;
 
-  &:hover {
-    border-bottom: 2px solid $color-blue-underline;
-    outline: none;
-  }
-
+  &:hover,
   &:focus,
   &:active {
     border-bottom: 2px solid $color-blue-underline;
@@ -33,7 +26,7 @@
 }
 
 .user__input[placeholder] {
-  @include font(17px, 18px);
+  line-height: #{$base-line-height - 6px};
   font-weight: 400;
 }
 

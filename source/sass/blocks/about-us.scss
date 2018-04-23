@@ -8,8 +8,7 @@
 
 .about-us__item {
   padding-top: 75px;
-
-  @include font(17px, 20px);
+  line-height: #{$base-line-height - 4px};
   background-repeat: no-repeat;
   background-position: left 15px;
 

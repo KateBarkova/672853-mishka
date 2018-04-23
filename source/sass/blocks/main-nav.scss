@@ -8,8 +8,7 @@
   top: 30px;
   width: 21px;
   height: 20px;
-
-  @include font(0, 0);
+  font-size: 0;
   border: none;
   background-image: url("../img/icon-menu-close.svg");
   background-color: transparent;

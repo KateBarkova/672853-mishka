@@ -8,7 +8,7 @@
 
 .feedback__text {
   @include list-style;
-  @include font(15px, 30px);
+  @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
   font-weight: 400;
   color: $base-color-text;
 }
@@ -16,13 +16,13 @@
 .feedback__username {
   font: inherit;
 
-  @include font(17px, 24px);
+  @include font($base-font-size, $base-line-height);
   font-weight: 700;
   color: $color-black;
 }
 
 .feedback__email {
-  @include font(17px, 30px);
+  @include font($base-font-size, #{$base-line-height + 6px});
 }
 
 .feedback__user {
@@ -43,5 +43,5 @@
 }
 
 .feedback__write {
-  @include font(18px, 20px);
+  @include font(#{$base-font-size + 1px}, #{$base-line-height - 4px});
 }
