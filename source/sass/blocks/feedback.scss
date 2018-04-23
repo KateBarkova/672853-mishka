@@ -1,5 +1,5 @@
 .feedback {
- @include section-padding
+ @include section-padding;
 }
 
 .feedback__list {
@@ -10,7 +10,7 @@
   @include list-style;
   @include font(15px, 30px);
   font-weight: 400;
-  color: $base-color;
+  color: $base-color-text;
 }
 
 .feedback__username {

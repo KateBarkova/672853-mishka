@@ -1,3 +1,7 @@
+.phone {
+  font-family: $base-font-family;
+}
+
 .phone__input {
   display: block;
   width: 100%;
@@ -6,22 +10,34 @@
   border-bottom: 2px solid $color-black;
   @include font(17px, 18px);
   font-weight: 400;
-  @include input-placeholder {
-    color: rgba(68, 68, 68, 0.3);
-    font-family: $base-font-family;
-  }
+  font: inherit;
+  color: $base-color-text;
 
   &:hover {
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $color-blue-underline;
     outline: none;
   }
 
   &:focus,
   &:active {
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $color-blue-underline;
     outline: none;
-    @include input-placeholder {
-      color: $base-color;
-    }
   }
+}
+
+.phone__input[placeholder] {
+    font-weight: 400;
+    @include font(17px, 18px);
+}
+
+.phone__input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.phone__input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.phone__input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
 }

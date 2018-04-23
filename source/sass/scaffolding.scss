@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-white;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-black;
+  max-width: 320px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+// @media (min-width: $tablet-width) {
+//   body {
+//     max-width: 768px;
+//   }
+// }
+
+a {
+  text-decoration: none;
+}

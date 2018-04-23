@@ -28,15 +28,15 @@
   box-sizing: border-box;
 }
 
-input:hover + .cart__size,
-input:focus + .cart__size {
+.cart__input:hover + .cart__size,
+.cart__input:focus + .cart__size {
   outline: 2px solid #c7c7c7;
 }
 
-input:active + .cart__size {
-  outline: 2px solid #62d1ba;
+.cart__input:active + .cart__size {
+  outline: 2px solid $color-blue-underline;
 }
 
-input:checked  + .cart__size {
-  outline: 2px solid #63d1bb;
+.cart__input:checked  + .cart__size {
+  outline: 2px solid $color-blue;
 }

@@ -19,7 +19,7 @@
   margin-bottom: 20px;
   @include font(15px, 24px);
   font-weight: 400;
-  color: $base-color;
+  color: $base-color-text;
 }
 
 .product-week__property {
@@ -28,7 +28,7 @@
   margin-bottom: 30px;
   @include font(15px, 20px);
   font-weight: 400;
-  color: $base-color;
+  color: $base-color-text;
 }
 
 .product-week__cell {

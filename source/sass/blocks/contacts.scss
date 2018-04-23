@@ -23,7 +23,7 @@
 .contacts__cell {
   min-width: 75px;
   vertical-align: top;
-  color: $base-color;
+  color: $base-color-text;
 
   &--address {
     max-width: 150px;
@@ -31,7 +31,7 @@
 }
 
 .contacts__email {
-  color: $base-color;
+  color: $base-color-text;
   border-bottom: 1px solid #46c1ae;
 
   &:hover,

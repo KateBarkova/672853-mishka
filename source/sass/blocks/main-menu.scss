@@ -10,7 +10,7 @@
   text-decoration: none;
   color: black;
 
-  box-shadow: 0 1px 0px 0 #ececec;
+  box-shadow: $base-shadow;
 
 
   &:hover,
@@ -27,3 +27,11 @@
   position: absolute;
   left: 30px;
 }
+
+// @media (min-width: $tablet-width) {
+//   .main-menu {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+// }

@@ -10,14 +10,14 @@
   font-family: $base-font-family;
 
   &:hover {
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-blue-underline;
     outline: none;
   }
 
   &:focus,
   &:active {
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-blue-underline;
     outline: none;
-    color: $base-color;
+    color: $base-color-text;
   }
 }
