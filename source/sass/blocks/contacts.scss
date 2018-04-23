@@ -5,12 +5,14 @@
 .contacts__title {
   @include list-style;
   margin-bottom: 30px;
+
   @include font(18px, 30px);
 }
 
 .contacts__table {
   margin-bottom: 30px;
   border-collapse: collapse;
+
   @include font(15px, 30px);
   font-weight: 400;
 }

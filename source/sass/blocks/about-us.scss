@@ -8,13 +8,10 @@
 
 .about-us__item {
   padding-top: 75px;
+
   @include font(17px, 20px);
   background-repeat: no-repeat;
   background-position: left 15px;
-
-  &--material {
-    background-image: url("../img/icon-feature-flower.svg");
-  }
 
   &--material {
     background-image: url("../img/icon-feature-flower.svg");

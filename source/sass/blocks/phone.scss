@@ -8,9 +8,10 @@
   padding: 15px 0;
   border: none;
   border-bottom: 2px solid $color-black;
+
   @include font(17px, 18px);
-  font-weight: 400;
   font: inherit;
+  font-weight: 400;
   color: $base-color-text;
 
   &:hover {
@@ -26,8 +27,8 @@
 }
 
 .phone__input[placeholder] {
-    font-weight: 400;
-    @include font(17px, 18px);
+  @include font(17px, 18px);
+  font-weight: 400;
 }
 
 .phone__input::-webkit-input-placeholder {

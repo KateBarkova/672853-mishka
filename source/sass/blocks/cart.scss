@@ -1,5 +1,6 @@
 .cart {
   text-align: center;
+
   @include section-padding;
 }
 
@@ -9,6 +10,7 @@
 
 .cart__text {
   border: none;
+
   @include font(15px, 30px);
   font-weight: 400;
 }
@@ -37,6 +39,6 @@
   outline: 2px solid $color-blue-underline;
 }
 
-.cart__input:checked  + .cart__size {
+.cart__input:checked + .cart__size {
   outline: 2px solid $color-blue;
 }

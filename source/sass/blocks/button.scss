@@ -2,9 +2,11 @@
   display: block;
   box-sizing: border-box;
   min-width: 260px;
+
   @include list-style;
   padding: 15px;
   font: inherit;
+
   @include font(17px, 20px);
   text-transform: uppercase;
   color: $base-color-text;
@@ -21,27 +23,28 @@
     background-color: #444444;
     color: rgba(255, 255, 255, 0.3);
   }
-}
 
-.button--direction {
-  display: inline-block;
-  min-width: 125px;
-  height: 52px;
-  @include font(0, 0);
-  border: 1px solid #ececec;
+  &--direction {
+    display: inline-block;
+    min-width: 125px;
+    height: 52px;
 
-  &:hover {
-    background-color: transparent;
-  }
+    @include font(0, 0);
+    border: 1px solid #ececec;
 
-  &:active {
-    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
   }
 
   &--order {
-  background-color: #63d1bb;
-  border: none;
-  color: white;
+    background-color: #63d1bb;
+    border: none;
+    color: white;
 
     &:hover {
       background-color: #63d1bb;

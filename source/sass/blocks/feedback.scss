@@ -15,6 +15,7 @@
 
 .feedback__username {
   font: inherit;
+
   @include font(17px, 24px);
   font-weight: 700;
   color: $color-black;

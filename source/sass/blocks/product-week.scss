@@ -9,14 +9,16 @@
 .product-week__title {
   @include list-style;
   margin-bottom: 20px;
+
   @include font(17px, 30px);
   color: $color-blue;
   text-transform: uppercase;
 }
 
-.product-week__text{
+.product-week__text {
   @include list-style;
   margin-bottom: 20px;
+
   @include font(15px, 24px);
   font-weight: 400;
   color: $base-color-text;
@@ -24,8 +26,10 @@
 
 .product-week__property {
   display: block;
+
   @include list-style;
   margin-bottom: 30px;
+
   @include font(15px, 20px);
   font-weight: 400;
   color: $base-color-text;
