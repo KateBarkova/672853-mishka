@@ -1,0 +1,29 @@
+.making {
+  @include section-padding;
+}
+
+.making__video {
+  display: none;
+}
+
+.making__title {
+  padding: 0 0 25px 90px;
+
+  @include font($base-font-size, $base-line-height);
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+}
+
+.making__text {
+  @include list-style;
+  padding: 30px 40px 30px 30px;
+  font-size: #{$base-font-size - 4px};
+  color: $base-color-text;
+  font-weight: 400;
+}
+
+.making__order {
+  margin: 0 40px 30px 30px;
+  min-width: 150px;
+}

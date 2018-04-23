@@ -1,0 +1,44 @@
+.cart {
+  text-align: center;
+
+  @include section-padding;
+}
+
+.cart__title {
+  padding: 0 60px;
+}
+
+.cart__text {
+  border: none;
+
+  @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
+  font-weight: 400;
+}
+
+.cart__size-list {
+  @include list-style;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.cart__size {
+  display: block;
+  padding: 15px 20px;
+  outline: 2px solid #ececec;
+  min-width: 82px;
+  box-sizing: border-box;
+}
+
+.cart__input:hover + .cart__size,
+.cart__input:focus + .cart__size {
+  outline: 2px solid #c7c7c7;
+}
+
+.cart__input:active + .cart__size {
+  outline: 2px solid $color-blue-underline;
+}
+
+.cart__input:checked + .cart__size {
+  outline: 2px solid $color-blue;
+}

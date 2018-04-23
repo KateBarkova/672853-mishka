@@ -1,0 +1,40 @@
+.form {
+  @include list-style;
+  @include section-padding;
+}
+
+.form__fieldset {
+  @include list-style;
+  border: none;
+  margin: 10px 0;
+}
+
+.form__title {
+  padding: 10px 0;
+  line-height: #{$base-line-height - 8px};
+  color: $color-blue;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include list-style;
+}
+
+.form__label {
+  display: block;
+  padding: 10px 20px 10px 60px;
+  line-height: #{$base-line-height - 6px};
+}
+
+.form__text {
+  @include list-style;
+  margin-bottom: 30px;
+
+  @include font(#{$base-font-size - 3px}, #{$base-line-height - 8px});
+  font-weight: 400;
+  color: $base-color-text;
+}
+
+.form__button {
+  line-height: #{$base-line-height - 8px};
+}

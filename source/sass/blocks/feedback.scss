@@ -1,0 +1,47 @@
+.feedback {
+  @include section-padding;
+}
+
+.feedback__list {
+  @include list-style;
+}
+
+.feedback__text {
+  @include list-style;
+  @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
+  font-weight: 400;
+  color: $base-color-text;
+}
+
+.feedback__username {
+  font: inherit;
+
+  @include font($base-font-size, $base-line-height);
+  font-weight: 700;
+  color: $color-black;
+}
+
+.feedback__email {
+  @include font($base-font-size, #{$base-line-height + 6px});
+}
+
+.feedback__user {
+  margin-bottom: 30px;
+}
+
+.feedback__back {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__next {
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.feedback__write {
+  @include font(#{$base-font-size + 1px}, #{$base-line-height - 4px});
+}

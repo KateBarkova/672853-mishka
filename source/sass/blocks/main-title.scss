@@ -1,0 +1,10 @@
+.main-title {
+  padding: 70px 30px 125px;
+  margin: 0;
+  text-align: center;
+
+  @include font(#{$base-font-size + 10px}, #{$base-line-height + 6px});
+  color: #010000;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: center top;
+}

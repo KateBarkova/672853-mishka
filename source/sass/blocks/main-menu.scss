@@ -1,0 +1,34 @@
+.main-menu {
+  @include list-style;
+}
+
+.main-menu__link {
+  display: block;
+  padding: 28px 0 28px 75px;
+  text-decoration: none;
+  color: black;
+  box-shadow: $base-shadow;
+
+
+  &:hover,
+  &:focus {
+    color: $color-hover;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
+
+.main-menu__icon {
+  position: absolute;
+  left: 30px;
+}
+
+// @media (min-width: $tablet-width) {
+//   .main-menu {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+// }

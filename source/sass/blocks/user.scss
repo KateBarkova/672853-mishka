@@ -1,0 +1,43 @@
+.user {
+  font-family: $base-font-family;
+}
+
+.user__label {
+  display: block;
+  line-height: #{$base-line-height - 6px};
+}
+
+.user__input {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  font: inherit;
+  font-weight: 400;
+  color: $base-color-text;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $color-blue-underline;
+    outline: none;
+  }
+}
+
+.user__input[placeholder] {
+  line-height: #{$base-line-height - 6px};
+  font-weight: 400;
+}
+
+.user__input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.user__input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.user__input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}

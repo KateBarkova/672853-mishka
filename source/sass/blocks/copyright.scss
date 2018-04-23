@@ -1,0 +1,7 @@
+.copyright__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+
+  @include font(#{$base-font-size + 2px}, #{$base-line-height - 6px});
+}

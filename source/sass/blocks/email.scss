@@ -1,0 +1,37 @@
+.email {
+  font-family: $base-font-family;
+}
+
+.email__input {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  font: inherit;
+  color: $base-color-text;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $color-blue-underline;
+    outline: none;
+  }
+}
+
+.email__input[placeholder] {
+  line-height: #{$base-line-height - 6px};
+  font-weight: 400;
+}
+
+.email__input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.email__input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.email__input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}

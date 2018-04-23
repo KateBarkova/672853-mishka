@@ -1,0 +1,45 @@
+.product-week {
+  @include section-padding;
+}
+
+.product-week__name {
+  margin-bottom: 5px;
+}
+
+.product-week__title {
+  @include list-style;
+  margin-bottom: 20px;
+
+  @include font($base-font-size, #{$base-line-height - 4px});
+  color: $color-blue;
+  text-transform: uppercase;
+}
+
+.product-week__text {
+  @include list-style;
+  margin-bottom: 20px;
+  font-size: #{$base-font-size - 2px};
+  font-weight: 400;
+  color: $base-color-text;
+}
+
+.product-week__property {
+  display: block;
+
+  @include list-style;
+  margin-bottom: 30px;
+
+  @include font(#{$base-font-size - 2px}, #{$base-line-height - 4px});
+  font-weight: 400;
+  color: $base-color-text;
+}
+
+.product-week__cell {
+  min-width: 95px;
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0 10px 0;
+}
+
+.product-week__cost {
+  text-align: center;
+}

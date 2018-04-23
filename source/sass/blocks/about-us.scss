@@ -1,0 +1,38 @@
+.about-us {
+  @include section-padding;
+}
+
+.about-us__list {
+  @include list-style;
+}
+
+.about-us__item {
+  padding-top: 75px;
+  line-height: #{$base-line-height - 4px};
+  background-repeat: no-repeat;
+  background-position: left 15px;
+
+  &--material {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--style {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--like {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--domestic {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--pack {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
