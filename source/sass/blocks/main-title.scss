@@ -8,3 +8,21 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center top;
 }
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    padding: 165px 30px 490px;
+
+    @include font(43px, 50px);
+    margin-top: -80px;
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    @include font(53px, 57px);
+    border-top: none;
+    padding-bottom: 390px;
+  }
+}

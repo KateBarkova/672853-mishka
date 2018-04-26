@@ -1,0 +1,56 @@
+.user-menu {
+  @include list-style;
+}
+
+.user-menu__link {
+  display: block;
+  position: relative;
+  padding: 28px 0 28px 23.4%;
+  text-decoration: none;
+  color: black;
+  box-shadow: $base-shadow;
+
+  &:hover,
+  &:focus {
+    color: $color-hover;
+
+    path {
+      fill: $color-blue
+    }
+  }
+
+  &:active {
+    color: $color-active;
+
+    path {
+      fill: rgba($color-blue, $alpha);
+    }
+  }
+}
+
+.user-menu__icon {
+  position: absolute;
+  left: 9.3%;
+}
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-menu__link {
+    padding: 32px 0 32px 83px;
+    padding-left: 83px;
+    box-shadow: none;
+    border-left: 1px solid #ececec;
+
+    &--hidden {
+      font-size: 0;
+    }
+  }
+
+  .user-menu__icon {
+      left: 30px;
+    }
+}

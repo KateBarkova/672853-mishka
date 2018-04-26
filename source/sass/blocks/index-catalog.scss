@@ -10,7 +10,6 @@
   background-repeat: no-repeat;
   background-position: 80% center;
 
-
   &--interior {
     background-image: url("../img/icon-interior.svg");
     background-color: $color-blue;
@@ -23,11 +22,41 @@
 
   &:hover,
   &:focus {
-    padding: 30px 180px 35px 30px;
-    background-position: 80% 45%;
+    margin-top: -5px;
+    padding-bottom: 35px;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .index-catalog__list {
+    display: flex;
+    margin-top: -118px;
+  }
+
+  .index-catalog__item {
+    flex-grow: 1;
+  }
+
+  .index-catalog__link {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 180px 35px 30px;
+
+    &:hover,
+    &:focus {
+    padding-bottom: 40px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .index-catalog__link {
+    padding: 35px 380px 35px 30px;
+    background-position: 90% center;
   }
 }

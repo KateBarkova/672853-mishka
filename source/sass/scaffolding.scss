@@ -7,16 +7,34 @@ body {
   line-height: $base-line-height;
   font-weight: 700;
   color: $color-black;
-  max-width: 320px;
+  // max-width: 320px;
   outline: 1px solid red;
 }
 
-// @media (min-width: $tablet-width) {
-//   body {
-//     max-width: 768px;
-//   }
-// }
-
 a {
   text-decoration: none;
+}
+
+// .container {
+//   padding: 0 30px;
+// }
+
+@media (min-width: $tablet-width) {
+  body {
+    max-width: 768px;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    max-width: 1200px;
+  }
+
+  .container {
+    padding: 0 99px;
+  }
 }

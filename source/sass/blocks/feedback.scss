@@ -45,3 +45,50 @@
 .feedback__write {
   @include font(#{$base-font-size + 1px}, #{$base-line-height - 4px});
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .feedback__title {
+    min-width: 50%;
+  }
+  .feedback__write {
+    order: 1;
+  }
+
+  .feedback__list,
+  .feedback__back,
+  .feedback__next {
+    order: 2;
+  }
+
+  .feedback__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__back,
+  .feedback__next {
+    margin: 0;
+    margin-left: auto;
+    margin-top: auto;
+
+  }
+
+  .feedback__list {
+    width: 50%
+  }
+  .feedback__text p {
+    width: 200%
+  }
+
+
+  // .feedback__user {
+  //   position: relative;
+  //   top: 50px;
+  // }
+}

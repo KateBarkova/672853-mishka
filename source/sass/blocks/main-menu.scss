@@ -4,11 +4,10 @@
 
 .main-menu__link {
   display: block;
-  padding: 28px 0 28px 75px;
+  padding: 28px 0 28px 23.4%;
   text-decoration: none;
   color: black;
   box-shadow: $base-shadow;
-
 
   &:hover,
   &:focus {
@@ -20,15 +19,24 @@
   }
 }
 
-.main-menu__icon {
-  position: absolute;
-  left: 30px;
+@media (min-width: $tablet-width) {
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-menu__link {
+    padding: 25px 0;
+    min-width: 167px;
+    font-size: #{$base-font-size - 2px};
+    box-shadow: none;
+  }
 }
 
-// @media (min-width: $tablet-width) {
-//   .main-menu {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-
-// }
+@media (min-width: $desktop-width) {
+  .main-menu__link {
+    padding: 32px 0;
+    font-size: $base-font-size;
+    min-width: 222px;
+  }
+}
