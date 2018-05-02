@@ -1,34 +1,45 @@
 .form {
-  @include list-style;
+  @include indent-reset;
   @include section-padding;
 }
 
 .form__fieldset {
-  @include list-style;
+  @include indent-reset;
   border: none;
-  margin: 10px 0;
 }
 
 .form__title {
-  padding: 10px 0;
+  padding: 30px 0;
   line-height: #{$base-line-height - 8px};
   color: $color-blue;
   text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: 75%;
+    height: 2px;
+    background-color: #62d1ba;
+    top: 50%;
+    right: 0;
+  }
 }
 
 .form__list {
-  @include list-style;
+  @include list-reset;
 }
 
 .form__label {
   display: block;
   padding: 10px 20px 10px 60px;
   line-height: #{$base-line-height - 6px};
+  max-width: 145px;
 }
 
 .form__text {
-  @include list-style;
-  margin-bottom: 30px;
+  @include indent-reset;
+  margin: 20px 0 30px;
 
   @include font(#{$base-font-size - 3px}, #{$base-line-height - 8px});
   font-weight: 400;
@@ -37,4 +48,68 @@
 
 .form__button {
   line-height: #{$base-line-height - 8px};
+  margin: 0 auto;
+  min-width: 228px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 0;
+  }
+
+  .form__wrapper {
+    display: flex;
+    padding: 50px;
+  }
+
+  .form__title {
+    min-width: 167px;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__container {
+    flex-grow: 1;
+  }
+
+  .form__label {
+    max-width: 100%;
+  }
+
+  .form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 50px;
+  }
+
+  .form__text {
+    margin: 0;
+  }
+
+  .form__button {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    padding: 50px 225px 50px 113px;
+
+    &--big {
+      padding-right: 100px;
+    }
+  }
+
+  .form__title {
+    min-width: 112px;
+  }
+
+  .form__footer {
+    padding: 0 225px 50px 225px;
+  }
 }

@@ -44,16 +44,18 @@
   .main-nav__delivery {
     display: block;
     order: 3;
-    @include list-style;
+    margin: auto 0;
+
+    @include indent-reset;
     @include font(15px, 24px);
     font-weight: 400;
     color: $base-color-text;
-    margin: auto 0;
   }
 
   .main-nav__logo {
     margin-right: auto;
     box-shadow: none;
+    padding: 18px 0;
   }
 }
 

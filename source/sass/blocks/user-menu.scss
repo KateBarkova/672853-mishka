@@ -1,5 +1,5 @@
 .user-menu {
-  @include list-style;
+  @include list-reset;
 }
 
 .user-menu__link {
@@ -15,7 +15,7 @@
     color: $color-hover;
 
     path {
-      fill: $color-blue
+      fill: $color-blue;
     }
   }
 
@@ -40,8 +40,7 @@
   }
 
   .user-menu__link {
-    padding: 32px 0 32px 83px;
-    padding-left: 83px;
+    padding: 26px 0 26px 83px;
     box-shadow: none;
     border-left: 1px solid #ececec;
 
@@ -51,6 +50,12 @@
   }
 
   .user-menu__icon {
-      left: 30px;
-    }
+    left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-menu__link {
+    padding: 33px 0 33px 83px;
+  }
 }

@@ -1,5 +1,7 @@
 .making {
-  @include section-padding;
+  padding: 30px 0;
+  margin: 0 30px 30px;
+  border: 1px solid #ececec;
 }
 
 .making__video {
@@ -8,6 +10,7 @@
 
 .making__title {
   padding: 0 0 25px 90px;
+  margin: 0;
 
   @include font($base-font-size, $base-line-height);
   background-image: url("../img/icon-video.svg");
@@ -16,7 +19,7 @@
 }
 
 .making__text {
-  @include list-style;
+  @include indent-reset;
   padding: 30px 40px 30px 30px;
   font-size: #{$base-font-size - 4px};
   color: $base-color-text;
@@ -24,6 +27,52 @@
 }
 
 .making__order {
-  margin: 0 40px 30px 30px;
+  margin: 0 40px 0 30px;
   min-width: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .making {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 50px;
+    padding: 0;
+  }
+
+  .making__title {
+    order: 1;
+    background-position: 20px center;
+    padding: 30px 0 30px 90px;
+    margin: 0 40px;
+  }
+
+  .making__text {
+    order: 1;
+    margin: 0 40px 40px;
+    padding: 0;
+  }
+
+  .making__order {
+    order: 1;
+    margin: 0 40px 45px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .making {
+    padding-left: 750px;
+    position: relative;
+  }
+
+  .making__title {
+    padding: 100px 140px 40px 0;
+    background-position: 0 50px;
+  }
+
+
+  .making__image {
+    position: absolute;
+    left: 0;
+  }
 }

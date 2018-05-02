@@ -55,7 +55,7 @@
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Магазин Мишка</h1>
-      <h2 class="main-title">Милые штуки ручной<br> работы для дома</h2>
+      <h2 class="main-title main-title--index">Милые штуки ручной<br> работы для дома</h2>
       <section class="index-catalog container">
         <h3 class="visually-hidden">Категории</h3>
         <ul class="index-catalog__list">
@@ -88,9 +88,7 @@
               </tr>
             </table>
           </div>
-          <div class="product-week__photowr">
-          <img class="product-week__photo" src="img/triple-set-mobile@1x.jpg" alt="Фото товара">
-          </div>
+          <img class="product-week__photo" src="img/triple-set-mobile@1x.jpg" alt="Фото товара" width="260" height="315">
           <div class="product-week__wrapper">
             <p class="product-week__cost">
               Цена:
@@ -103,12 +101,12 @@
       <section class="about-us">
         <h3 class="about-us__title title">Коротко о нас:</h3>
         <ul class="about-us__list">
-          <div>
+          <div class="about-us__wrapper about-us__wrapper--small">
             <li class="about-us__item about-us__item--material">Экологически чистые материалы</li>
             <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
             <li class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</li>
           </div>
-          <div>
+          <div class="about-us__wrapper  about-us__wrapper--big">
             <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
             <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
             <li class="about-us__item about-us__item--pack">Поставляется в подарочной упаковке</li>
@@ -129,26 +127,30 @@
             </blockquote>
           </li>
         </ul>
-        <button class="feedback__back button button--direction" type="button">Назад</button>
-        <button class="feedback__next button button--direction" type="button">Вперед</button>
+        <div class="feedback__wrapper">
+          <button class="feedback__back button button--direction" type="button">Назад</button>
+          <button class="feedback__next button button--direction" type="button">Вперед</button>
+        </div>
         <a href="#" class="feedback__write button">Написать</a>
       </section>
       <section class="contacts">
-        <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__table">
-          <tr class="contacts__row">
-            <td class="contacts__cell">e-mail:</td>
-            <td class="contacts__cell">
-              <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
-            </td>
-          </tr>
-          <tr class="contacts__row">
-            <td class="contacts__cell">адрес:</td>
-            <td class="contacts__cell contacts__cell--address">г. Санкт-Петербург,
-              ул. Большая Конюшенная,
-              д.&nbsp;19/8, офис 101</td>
-          </tr>
-        </table>
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title title">Контакты</h3>
+          <table class="contacts__table">
+            <tr class="contacts__row">
+              <td class="contacts__cell">e-mail:</td>
+              <td class="contacts__cell">
+                <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr class="contacts__row">
+              <td class="contacts__cell">адрес:</td>
+              <td class="contacts__cell contacts__cell--address">г. Санкт-Петербург,
+                ул. Большая Конюшенная,
+                д.&nbsp;19/8, офис 101</td>
+            </tr>
+          </table>
+        </div>
         <div class="contacts__map">
           <img class="contacts__image" src="img/map-mobile@1x.jpg" alt="Как до нас добраться" width="322" height="457">
         </div>
@@ -156,6 +158,7 @@
       </section>
     </main>
     <footer class="footer">
+      <a class="footer__logo"><img class="footer__logo-icon" src="img/logo-mobile.svg" width="102" height="34" alt="Магазин Мишка"></a>
       <ul class="footer__list social">
         <li class="social__item">
           <a href="#" class="social__btn social__btn--instagram">Инстаграм</a>
@@ -175,25 +178,27 @@
       </p>
     </footer>
     <section class="cart">
-      <h3 class="cart__title title">Добавить в корзину</h3>
-      <form class="cart__form">
-        <fieldset class="cart__text">Выберите размер:</fieldset>
-        <ul class="cart__size-list">
-          <li class="cart__item">
-            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-s" value="size s" checked>
-            <label class=" cart__size cart__size--s" for="size-s">S</label>
-          </li>
-          <li class="cart__item">
-            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-m" value="size m">
-            <label class="cart__size cart__size--m" for="size-m">M</label>
-          </li>
-          <li class="cart__item">
-            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-l" value="size l">
-            <label class="cart__size cart__size--l" for="size-l">L</label>
-          </li>
-        </ul>
-        <button class="cart__add button button--order" type="submit">Добавить</button>
-      </form>
+      <div class="cart__wrapper">
+        <h3 class="cart__title title">Добавить в корзину</h3>
+        <form class="cart__form">
+          <fieldset class="cart__text">Выберите размер:</fieldset>
+          <ul class="cart__size-list">
+            <li class="cart__item">
+              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-s" value="size s" checked>
+              <label class=" cart__size cart__size--s" for="size-s">S</label>
+            </li>
+            <li class="cart__item">
+              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-m" value="size m">
+              <label class="cart__size cart__size--m" for="size-m">M</label>
+            </li>
+            <li class="cart__item">
+              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-l" value="size l">
+              <label class="cart__size cart__size--l" for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="cart__add button button--order" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

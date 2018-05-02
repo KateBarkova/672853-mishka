@@ -1,5 +1,5 @@
 .main-menu {
-  @include list-style;
+  @include list-reset;
 }
 
 .main-menu__link {
@@ -26,7 +26,7 @@
   }
 
   .main-menu__link {
-    padding: 25px 0;
+    padding: 20px 0;
     min-width: 167px;
     font-size: #{$base-font-size - 2px};
     box-shadow: none;

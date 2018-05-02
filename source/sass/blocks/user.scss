@@ -41,3 +41,20 @@
 .user__input:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .user__item {
+    display: flex;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  .user__label {
+    margin-right: 25px;
+  }
+
+  .user__input {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+}

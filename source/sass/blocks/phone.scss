@@ -22,6 +22,7 @@
 .phone__input[placeholder] {
   line-height: #{$base-line-height - 6px};
   font-weight: 400;
+  background-color: #f1f1f1;
 }
 
 .phone__input::-webkit-input-placeholder {
@@ -34,4 +35,15 @@
 
 .phone__input:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
+}
+
+
+@media (min-width: $tablet-width) {
+  .phone {
+    background-color: #f1f1f1;
+  }
+
+  .phone__wrapper {
+    padding-bottom: 0;
+  }
 }

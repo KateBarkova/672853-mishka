@@ -3,11 +3,11 @@
 }
 
 .feedback__list {
-  @include list-style;
+  @include list-reset;
 }
 
 .feedback__text {
-  @include list-style;
+  @include indent-reset;
   @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
   font-weight: 400;
   color: $base-color-text;
@@ -52,43 +52,66 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-  }
-  .feedback__title {
-    min-width: 50%;
-  }
-  .feedback__write {
-    order: 1;
+    position: relative;
+    margin: 85px 50px 120px;
+    padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      top: -85px;
+      left: -50px;
+      width: 350px;
+      height: 457px;
+      z-index: -100;
+    }
   }
 
-  .feedback__list,
-  .feedback__back,
-  .feedback__next {
+  .feedback__title {
+    min-width: 50%;
+    margin-bottom: 60px;
+  }
+
+  .feedback__write {
+    order: 1;
+    min-width: 175px;
+  }
+
+  .feedback__list {
     order: 2;
   }
 
   .feedback__text {
     display: flex;
     flex-direction: column;
+    font-size: $base-font-size;
   }
 
-  .feedback__back,
-  .feedback__next {
-    margin: 0;
-    margin-left: auto;
-    margin-top: auto;
-
-  }
-
-  .feedback__list {
-    width: 50%
-  }
   .feedback__text p {
-    width: 200%
+    margin-bottom: 40px;
   }
 
+  .feedback__wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-  // .feedback__user {
-  //   position: relative;
-  //   top: 50px;
-  // }
+  .feedback__user {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    margin: 0 100px 70px;
+    padding-left: 177px;
+
+    &::before {
+      left: 0;
+    }
+  }
 }
