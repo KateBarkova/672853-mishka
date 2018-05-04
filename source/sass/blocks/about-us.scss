@@ -3,7 +3,7 @@
 }
 
 .about-us__list {
-  @include list-style;
+  @include list-reset;
 }
 
 .about-us__item {
@@ -34,5 +34,41 @@
 
   &--pack {
     background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    margin: 50px;
+    padding: 0;
+  }
+
+  .about-us__list {
+    display: flex;
+    margin-bottom: 170px;
+  }
+
+  .about-us__item {
+    @include font(20px, 22px);
+    padding-top: 125px;
+    background-position: left 55px;
+  }
+
+  .about-us__wrapper {
+    &--small {
+      flex-basis: 250px;
+      box-sizing: border-box;
+      margin-right: 94px;
+    }
+
+    &--big {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    margin: 65px 250px;
   }
 }

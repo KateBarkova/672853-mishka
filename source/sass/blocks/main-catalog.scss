@@ -1,5 +1,5 @@
 .main-catalog__title {
-  @include list-style;
+  @include indent-reset;
   padding: 75px 30px;
 
   @include font(#{$base-font-size + 10px}, #{$base-line-height + 6px});

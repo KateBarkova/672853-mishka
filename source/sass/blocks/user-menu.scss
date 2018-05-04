@@ -1,0 +1,61 @@
+.user-menu {
+  @include list-reset;
+}
+
+.user-menu__link {
+  display: block;
+  position: relative;
+  padding: 28px 0 28px 23.4%;
+  text-decoration: none;
+  color: black;
+  box-shadow: $base-shadow;
+
+  &:hover,
+  &:focus {
+    color: $color-hover;
+
+    path {
+      fill: $color-blue;
+    }
+  }
+
+  &:active {
+    color: $color-active;
+
+    path {
+      fill: rgba($color-blue, $alpha);
+    }
+  }
+}
+
+.user-menu__icon {
+  position: absolute;
+  left: 9.3%;
+}
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-menu__link {
+    padding: 26px 0 26px 83px;
+    box-shadow: none;
+    border-left: 1px solid #ececec;
+
+    &--hidden {
+      font-size: 0;
+    }
+  }
+
+  .user-menu__icon {
+    left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-menu__link {
+    padding: 33px 0 33px 83px;
+  }
+}

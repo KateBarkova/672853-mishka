@@ -1,7 +1,53 @@
-.type__label::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 52px;
-  height: 52px;
+.type__label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 50%;
+    left: 5%;
+    top: 25%;
+    box-shadow:
+      0 0 0 10px white,
+      0 0 0 12px #444444;
+  }
+}
+
+
+.type__input:checked + .type__label {
+  &::before {
+    background-color: #62d1ba;
+  }
+}
+
+.type__input:hover + .type__label,
+.type__input:focus + .type__label {
+  &::before {
+    box-shadow:
+      0 0 0 10px white,
+      0 0 0 12px #62d1ba;
+  }
+}
+
+.type__input:active + .type__label {
+  &::before {
+    box-shadow:
+      0 0 0 10px white,
+      0 0 0 12px #c7c7c7;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .type__label {
+    padding: 0 0 60px 60px;
+
+    &::before {
+      top: 0;
+    }
+  }
 }

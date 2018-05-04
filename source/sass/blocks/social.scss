@@ -1,5 +1,5 @@
 .social {
-  @include list-style;
+  @include indent-reset;
 }
 
 .social__item {
