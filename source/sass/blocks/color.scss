@@ -1,6 +1,6 @@
 .color__label {
   position: relative;
-  padding: 20px 0 20px 60px;
+  padding: 13px 0 30px 60px;
 
   &::before {
     content: "";
@@ -11,7 +11,7 @@
     background-color: transparent;
     box-sizing: border-box;
     left: 0;
-    top: 20%;
+    top: 0;
     border: 2px solid #444444;
   }
 }
@@ -21,6 +21,7 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 25px 25px;
   }
 }
 
@@ -40,6 +41,7 @@
 @media (min-width: $tablet-width) {
   .color {
     background-color: #f1f1f1;
+    padding: 20px 0 15px;
   }
 
   .color__list {
@@ -49,12 +51,24 @@
   }
 
   .color__item {
-    width: 50%;
+    width: 47%;
+  }
+
+  .color__label {
+    padding: 0px 0 56px 80px;
+
+    &::before {
+      width: 54px;
+      height: 52px;
+      top: -16px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .color__item {
-    width: 260px;
+    width: 265px;
+
+    &:nth-child(3n) {margin-right: auto;}
   }
 }

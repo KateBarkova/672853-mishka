@@ -22,3 +22,19 @@
     color: $base-color-text;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 55px;
+  }
+
+  .comment__textarea {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin: 5px 0 50px;
+  }
+}

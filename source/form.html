@@ -12,7 +12,11 @@
     <header class="main-header">
       <nav class="main-nav container">
         <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">Меню</button>
         <ul class="main-menu main-nav__main">
@@ -140,7 +144,7 @@
           <div class="form__wrapper">
             <legend class="comment__title form__title">Доп</legend>
             <label class="visually-hidden" for="user-comment">Доп</label>
-            <textarea class="comment__textarea" name="user-comment" id="user-comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
+            <textarea class="comment__textarea" name="user-comment" id="user-comment" rows="6">Опишите все ваши пожелания к заказу</textarea>
           </div>
         </fieldset>
         <div class="form__footer">
@@ -150,7 +154,7 @@
       </form>
     </main>
     <footer class="footer">
-      <a class="footer__logo" href="index.html"><img class="footer__logo-icon" src="img/logo-mobile.svg" width="102" height="34" alt="Магазин Мишка"></a>
+      <a class="footer__logo" href="index.html"><img class="footer__logo-icon" src="img/logo-footer.svg" width="102" height="34" alt="Магазин Мишка"></a>
       <ul class="footer__list social">
         <li class="social__item">
           <a href="#" class="social__btn social__btn--instagram">Инстаграм</a>

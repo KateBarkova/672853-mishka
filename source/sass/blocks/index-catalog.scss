@@ -4,11 +4,11 @@
 
 .index-catalog__link {
   display: block;
-  padding: 30px 180px 30px 30px;
+  padding: 26px 180px 29px 30px;
   font-size: #{$base-font-size + 2px};
   color: $color-white;
   background-repeat: no-repeat;
-  background-position: 80% center;
+  background-position: 88% center;
 
   &--interior {
     background-image: url("../img/icon-interior.svg");
@@ -34,13 +34,18 @@
 @media (min-width: $tablet-width) {
   .index-catalog__list {
     display: flex;
-    margin-top: -130px;
+    margin-top: -120px;
   }
+
+  .index-catalog__item {
+    width: 50%;
+  }
+
 
   .index-catalog__link {
     max-width: 100%;
     box-sizing: border-box;
-    padding: 35px 180px 35px 30px;
+    padding: 28px 180px 32px 35px;
 
     @include font(20px, 30px);
 
@@ -54,7 +59,7 @@
 
 @media (min-width: $desktop-width) {
   .index-catalog__link {
-    padding: 35px 360px 35px 30px;
-    background-position: 90% center;
+    padding: 28px 360px 32px 35px;
+    background-position: 92% center;
   }
 }

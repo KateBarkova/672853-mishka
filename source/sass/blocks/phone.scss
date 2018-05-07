@@ -1,11 +1,16 @@
 .phone {
   font-family: $base-font-family;
+  padding-bottom: 20px;
+}
+
+.phone__title {
+  margin-bottom: 5px;
 }
 
 .phone__input {
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 0 17px;
   border: none;
   border-bottom: 2px solid $color-black;
   font: inherit;
@@ -22,7 +27,6 @@
 .phone__input[placeholder] {
   line-height: #{$base-line-height - 6px};
   font-weight: 400;
-  background-color: #f1f1f1;
 }
 
 .phone__input::-webkit-input-placeholder {
@@ -45,5 +49,14 @@
 
   .phone__wrapper {
     padding-bottom: 0;
+  }
+
+  .phone__input {
+    padding: 15px 0 12px 15px;
+    font-size: 19px;
+  }
+
+  .phone__input[placeholder] {
+    background-color: #f1f1f1;
   }
 }

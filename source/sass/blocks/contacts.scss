@@ -1,6 +1,11 @@
+.contacts__wrapper {
+  padding: 0 30px;
+}
+
 .contacts__title {
   @include indent-reset;
-  @include section-padding;
+  padding: 35px 0 25px;
+  // @include font(#{$base-font-size + 1px}, #{$base-line-height + 6px});
 }
 
 
@@ -11,7 +16,7 @@
 }
 
 .contacts__table {
-  margin: 0 30px 30px 30px;
+  margin: 0 0 10px;
   border-collapse: collapse;
 
   @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
@@ -20,7 +25,7 @@
 
 .contacts__row {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contacts__cell {
@@ -53,22 +58,24 @@
 
 .contacts__write {
   @include font(#{$base-font-size +1px}, #{$base-line-height - 4px});
+  margin: 0 30px 40px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     position: relative;
-    margin: 60px 0;
+    margin: 60px 0 55px;
   }
 
   .contacts__wrapper {
     margin: 0 50px;
+    padding: 0;
   }
 
   .contacts__title {
     position: relative;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     &::before {
       content: "";
@@ -78,6 +85,7 @@
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       right: 0;
+      top: -10px;
     }
   }
 
@@ -93,37 +101,46 @@
 
   .contacts__row {
     width: 50%;
+    margin-bottom: 60px;
   }
 
   .contacts__cell {
+    font-size: 17px;
+
     &--address {
-      max-width: 230px;
+      min-width: 230px;
     }
   }
 
+  .contacts__map {
+    margin-bottom: 48px;
+  }
+
   .contacts__write {
+    min-width: 230px;
     max-width: 230px;
     margin: 0 auto;
+    font-size: 17px;
+
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin: 0 100px;
+    margin: 0 100px 105px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 60px;
   }
 
   .contacts__wrapper {
-    margin-left: 177px;
+    margin-left: 170px;
   }
 
   .contacts__title {
     &::before {
-      left: -110px;
+      left: -105px;
     }
   }
 
@@ -131,8 +148,12 @@
     display: block;
   }
 
+  .contacts__row {
+    margin-bottom: 30px;
+
+  }
   .contacts__table {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .contacts__map {
@@ -140,6 +161,10 @@
     right: 0;
     bottom: 0;
     margin: 0;
+  }
+
+  .contacts__image {
+    vertical-align: bottom;
   }
 
   .contacts__write {

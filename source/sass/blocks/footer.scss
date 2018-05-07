@@ -1,11 +1,11 @@
 .footer {
-  @include section-padding;
+  padding: 15px 30px;
   background-color: $color-grey;
 }
 
 .footer__list {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -15,7 +15,7 @@
   justify-content: center;
 
   @include indent-reset;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .footer__logo {
@@ -30,13 +30,14 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 45px 50px 50px;
     align-items: center;
   }
 
   .footer__list {
     border: none;
     padding: 0;
+    margin-left: 80px;
   }
 
   .footer__copyright {
@@ -46,6 +47,6 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 50px 100px;
+    padding: 45px 100px;
   }
 }

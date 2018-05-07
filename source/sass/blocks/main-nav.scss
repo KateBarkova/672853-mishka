@@ -5,7 +5,7 @@
 .main-nav__toggle {
   position: absolute;
   right: 9.3%;
-  top: 30px;
+  top: 28px;
   width: 21px;
   height: 20px;
   font-size: 0;
@@ -16,9 +16,18 @@
 
 .main-nav__logo {
   display: block;
-  padding: 22px 0;
+  padding: 22px 0 16px;
   text-align: center;
   box-shadow: $base-shadow;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .menu-product,
@@ -44,7 +53,7 @@
   .main-nav__delivery {
     display: block;
     order: 3;
-    margin: auto 0;
+    align-self: center;
 
     @include indent-reset;
     @include font(15px, 24px);
@@ -55,30 +64,41 @@
   .main-nav__logo {
     margin-right: auto;
     box-shadow: none;
-    padding: 18px 0;
+    padding: 22px 0 15px;
+  }
+
+  .main-nav__logo-image {
+    width: 112px;
+    height: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__main {
     order: 1;
-    border-bottom: 1px solid #ececec;
   }
 
   .main-nav__logo {
     order: 2;
-    margin-right: 0;
-    flex-grow: 1;
-    border-bottom: 1px solid #ececec;
+    margin-right: auto;
+    margin-left: 5px;
+    padding: 8px 0 0;
+  }
+
+  .main-nav__logo-image {
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__user {
     order: 3;
-    border-bottom: 1px solid #ececec;
   }
 
   .main-nav__product {
     order: 3;
     flex-grow: 1;
+  }
+
+  .main-nav__delivery {
   }
 }

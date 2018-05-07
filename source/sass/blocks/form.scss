@@ -1,6 +1,10 @@
 .form {
   @include indent-reset;
-  @include section-padding;
+  padding: 0 30px;
+}
+
+.form__wrapper {
+  margin-bottom: 15px;
 }
 
 .form__fieldset {
@@ -9,7 +13,8 @@
 }
 
 .form__title {
-  padding: 30px 0;
+  padding: 0;
+  margin-bottom: 25px;
   line-height: #{$base-line-height - 8px};
   color: $color-blue;
   text-transform: uppercase;
@@ -32,14 +37,14 @@
 
 .form__label {
   display: block;
-  padding: 10px 20px 10px 60px;
+  padding: 10px 0 15px 60px;
   line-height: #{$base-line-height - 6px};
-  max-width: 145px;
+  max-width: 160px;
 }
 
 .form__text {
   @include indent-reset;
-  margin: 20px 0 30px;
+  margin: 0 0 30px;
 
   @include font(#{$base-font-size - 3px}, #{$base-line-height - 8px});
   font-weight: 400;
@@ -48,8 +53,8 @@
 
 .form__button {
   line-height: #{$base-line-height - 8px};
-  margin: 0 auto;
-  min-width: 228px;
+  margin-bottom: 55px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,7 +64,9 @@
 
   .form__wrapper {
     display: flex;
-    padding: 50px;
+    padding: 50px 50px 0;
+    margin: 0;
+    align-items: baseline;
   }
 
   .form__title {
@@ -77,6 +84,7 @@
 
   .form__label {
     max-width: 100%;
+    font-size: 19px;
   }
 
   .form__footer {
@@ -89,16 +97,18 @@
 
   .form__text {
     margin: 0;
+    @include font(17px, 30px);
   }
 
   .form__button {
     margin: 0;
+    min-width: 230px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__wrapper {
-    padding: 50px 225px 50px 113px;
+    padding: 45px 275px 0 160px;
 
     &--big {
       padding-right: 100px;
@@ -110,6 +120,7 @@
   }
 
   .form__footer {
-    padding: 0 225px 50px 225px;
+    margin: 0 auto;
+    max-width: 700px;
   }
 }

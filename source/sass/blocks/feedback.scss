@@ -1,5 +1,12 @@
 .feedback {
   @include section-padding;
+  padding-bottom: 50px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x bottom;
+  background-size: auto 5px;
+}
+
+.feedback__title {
+    margin-bottom: 25px;
 }
 
 .feedback__list {
@@ -11,6 +18,10 @@
   @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
   font-weight: 400;
   color: $base-color-text;
+}
+
+.feedback__text p {
+  margin: 0 0 25px;
 }
 
 .feedback__username {
@@ -43,7 +54,11 @@
 }
 
 .feedback__write {
-  @include font(#{$base-font-size + 1px}, #{$base-line-height - 4px});
+  font-size: #{$base-font-size + 1px};
+}
+
+.feedback__wrapper {
+  margin-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,16 +68,19 @@
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    margin: 85px 50px 120px;
-    padding: 0;
+    margin: 155px 0 0;
+    padding: 0 50px;
+    padding-bottom: 105px;
+    background-size: auto 16px;
+    background-position: bottom;
 
     &::before {
       content: "";
       position: absolute;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
-      top: -85px;
-      left: -50px;
+      top: -80px;
+      left: 0;
       width: 350px;
       height: 457px;
       z-index: -100;
@@ -71,7 +89,7 @@
 
   .feedback__title {
     min-width: 50%;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 
   .feedback__write {
@@ -90,28 +108,58 @@
   }
 
   .feedback__text p {
-    margin-bottom: 40px;
+    margin: 0 0 60px;
   }
 
   .feedback__wrapper {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 95px;
+    right: 50px;
   }
 
   .feedback__user {
     display: flex;
     flex-direction: column;
   }
+
+  .feedback__username {
+    font-size: 18px;
+  }
+
+  .feedback__write {
+    font-size: $base-font-size;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
-    margin: 0 100px 70px;
-    padding-left: 177px;
+    margin: 152px 100px 145px;
+    padding: 0 0 155px 177px;
+
+    background-size: auto 22px;
 
     &::before {
       left: 0;
+      top: -70px;
     }
   }
+  .feedback__text p {
+    margin-bottom: 42px;
+    max-width: 780px;
+  }
+
+  .feedback__username {
+    font-size: $base-font-size;
+  }
+
+  .feedback__write {
+    margin-top: 5px;
+  }
+
+  .feedback__wrapper {
+    position: absolute;
+    bottom: 145px;
+    right: 0;
+  }
+
 }
