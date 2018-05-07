@@ -11,6 +11,7 @@
   display: block;
   line-height: #{$base-line-height - 6px};
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .user__input {
@@ -22,6 +23,7 @@
   font: inherit;
   font-weight: 400;
   color: $base-color-text;
+  cursor: pointer;
 
   &:hover,
   &:focus,

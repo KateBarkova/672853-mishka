@@ -9,6 +9,7 @@
   font-weight: 400;
   color: rgba(68, 68, 68, 0.3);
   font-family: $base-font-family;
+  cursor: pointer;
 
   &:hover {
     border: 2px solid $color-blue-underline;

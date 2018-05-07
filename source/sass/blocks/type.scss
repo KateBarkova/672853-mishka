@@ -4,6 +4,7 @@
 
 .type__label {
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -62,6 +63,23 @@
       0 0 0 14px white,
       0 0 0 16px #444444;
 
+    }
+  }
+
+  .type__input:hover + .type__label,
+  .type__input:focus + .type__label {
+    &::before {
+      box-shadow:
+        0 0 0 14px white,
+        0 0 0 16px #62d1ba;
+  }
+}
+
+  .type__input:active + .type__label {
+    &::before {
+      box-shadow:
+        0 0 0 14px white,
+        0 0 0 16px #c7c7c7;
     }
   }
 }

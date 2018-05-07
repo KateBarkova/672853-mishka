@@ -1,6 +1,7 @@
 .color__label {
   position: relative;
   padding: 13px 0 30px 60px;
+  cursor: pointer;
 
   &::before {
     content: "";

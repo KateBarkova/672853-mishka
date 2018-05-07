@@ -25,6 +25,16 @@
 @media (min-width: $tablet-width) {
   .footer__logo {
     display: block;
+
+    &[href]:hover,
+    &[href]:focus {
+      fill: #46c1ae;
+    }
+
+    &[href]:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 
   .footer {

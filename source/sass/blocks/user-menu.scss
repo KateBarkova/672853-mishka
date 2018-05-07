@@ -10,19 +10,25 @@
   color: black;
   box-shadow: $base-shadow;
 
+  svg {
+    opacity: 0.2;
+  }
+
   &:hover,
   &:focus {
     color: $color-hover;
 
-    path {
+    svg {
       fill: $color-blue;
+      opacity: 1;
     }
+
   }
 
   &:active {
     color: $color-active;
 
-    path {
+    svg {
       fill: rgba($color-blue, $alpha);
     }
   }
