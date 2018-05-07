@@ -21,7 +21,7 @@
     margin-top: -60px;
     position: relative;
     padding: 93px 0 85px;
-    border-top: 1px solid #ececec;
+    border-top: 2px solid #ececec;
 
     @include font(43px, 50px);
 
@@ -55,7 +55,6 @@
     @include font(53px, 57px);
     padding-bottom: 105px;
     margin-top: -63px;
-    box-shadow: 0 -51px 0 -50px #ececec;
 
     &::before {
       height: 18px;

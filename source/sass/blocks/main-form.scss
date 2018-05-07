@@ -60,10 +60,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-form__title {
-    @include font(53px, 57px);
-    padding-bottom: 105px;
-  }
+  // .main-form__title {
+  //   @include font(53px, 57px);
+  //   padding-bottom: 105px;
+  // }
 
   .main-form__text {
     display: block;

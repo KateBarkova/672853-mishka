@@ -8,6 +8,17 @@
   // @include font(#{$base-font-size + 1px}, #{$base-line-height + 6px});
 }
 
+.contacts__image {
+  position: absolute;
+  bottom: 0;
+  z-index: -100;
+}
+
+.contacts__map {
+  position: relative;
+  height: 457px;
+}
+
 
 @media (max-width: 320px) {
   .contacts__title {
@@ -54,6 +65,10 @@
 
 .contacts__map {
   margin-bottom: 30px;
+}
+
+.contacts__map-google {
+  height: 457px;
 }
 
 .contacts__write {
@@ -127,7 +142,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin: 0 100px 105px;
+    margin: 0 50px 105px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -161,6 +176,10 @@
     right: 0;
     bottom: 0;
     margin: 0;
+  }
+
+  .contacts__map-google {
+    width: 525px;
   }
 
   .contacts__image {

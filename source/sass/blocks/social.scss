@@ -11,11 +11,15 @@
 }
 
 .social__btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
   height: 35px;
   fill: #221f1f;
   font-size: 0;
+
+
 
   &--fb {
     margin: 0 22px;
@@ -32,8 +36,4 @@
   }
 }
 
-.social__btn  svg {
-  outline: 1px solid red;
-  display: block;
-  margin-top: auto;
-}
+

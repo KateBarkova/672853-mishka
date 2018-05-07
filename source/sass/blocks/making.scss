@@ -2,6 +2,14 @@
   padding: 25px 0 30px;
   margin: 0 30px 60px;
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0px 6px 10px 0 rgba(black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0 rgba(black, 0.1);
+  }
 }
 
 .making__video {
@@ -103,11 +111,11 @@
 @media (min-width: $desktop-width) {
   .making {
     position: relative;
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .making__wrapper {
-    margin: 0 100px 105px auto;
+    margin: 0 50px 105px auto;
     max-width: 367px;
     padding: 0 57px 0 78px;
     box-sizing: border-box;
