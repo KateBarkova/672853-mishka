@@ -13,7 +13,7 @@
     box-sizing: border-box;
     left: 0;
     top: 0;
-    border: 2px solid #444444;
+    border: 2px solid $base-color-text;
   }
 }
 
@@ -29,7 +29,7 @@
 .color__input:hover + .color__label,
 .color__input:focus + .color__label {
   &::before {
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-blue-underline;
   }
 }
 
@@ -41,8 +41,8 @@
 
 @media (min-width: $tablet-width) {
   .color {
-    background-color: #f1f1f1;
     padding: 20px 0 15px;
+    background-color: $color-grey;
   }
 
   .color__list {
@@ -56,7 +56,7 @@
   }
 
   .color__label {
-    padding: 0px 0 56px 80px;
+    padding: 0 0 56px 80px;
 
     &::before {
       width: 54px;
@@ -70,6 +70,8 @@
   .color__item {
     width: 265px;
 
-    &:nth-child(3n) {margin-right: auto;}
+    &:nth-child(3n) {
+      margin-right: auto;
+    }
   }
 }

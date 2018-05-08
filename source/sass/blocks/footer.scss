@@ -1,5 +1,5 @@
 .footer {
-  padding: 15px 30px;
+  padding: 21px 30px 25px;
   background-color: $color-grey;
 }
 
@@ -7,15 +7,6 @@
   text-align: center;
   padding-bottom: 22px;
   border-bottom: 1px solid #e5e5e5;
-}
-
-.footer__copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include indent-reset;
-  padding-top: 10px;
 }
 
 .footer__logo {
@@ -40,23 +31,17 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 45px 50px 50px;
-    align-items: center;
+    padding: 50px;
+    align-items: flex-end;
   }
 
   .footer__list {
-    border: none;
     padding: 0;
     margin-left: 80px;
+    border: none;
   }
 
   .footer__copyright {
     padding: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .footer {
-    padding: 45px 50px;
   }
 }

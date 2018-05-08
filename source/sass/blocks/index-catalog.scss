@@ -5,11 +5,11 @@
 .index-catalog__link {
   display: block;
   padding: 26px 180px 29px 30px;
-  font-size: #{$base-font-size + 2px};
+  font-size: 19px;
   color: $color-white;
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     display: block;
@@ -21,7 +21,7 @@
   &--interior {
     background-color: $color-blue;
 
-    &:before {
+    &::before {
       background-image: url("../img/icon-interior.svg");
       background-repeat: no-repeat;
       opacity: 0.5;
@@ -31,7 +31,7 @@
   &--toy {
     background-color: #56c3b2;
 
-    &:before {
+    &::before {
       background-image: url("../img/icon-toy.svg");
       background-repeat: no-repeat;
       opacity: 0.5;
@@ -43,15 +43,15 @@
     margin-top: -5px;
     padding-bottom: 35px;
 
-    &:before {
+    &::before {
       opacity: 0.7;
     }
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($color-white, $alpha);
 
-    &:before {
+    &::before {
       opacity: 0.3;
     }
   }
@@ -73,7 +73,7 @@
     box-sizing: border-box;
     padding: 28px 180px 32px 35px;
 
-    @include font(20px, 30px);
+    @include font(20px, $base-line-height-big);
 
     &:hover,
     &:focus {

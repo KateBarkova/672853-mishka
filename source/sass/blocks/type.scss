@@ -12,11 +12,12 @@
     display: block;
     width: 15px;
     height: 15px;
+    left: 5%;
+    top: 25%;
     background-color: white;
     box-sizing: border-box;
     border-radius: 50%;
-    left: 5%;
-    top: 25%;
+
     box-shadow:
       0 0 0 10px white,
       0 0 0 12px #444444;
@@ -60,9 +61,8 @@
       width: 20px;
       height: 20px;
       box-shadow:
-      0 0 0 14px white,
-      0 0 0 16px #444444;
-
+        0 0 0 14px white,
+        0 0 0 16px #444444;
     }
   }
 
@@ -72,8 +72,8 @@
       box-shadow:
         0 0 0 14px white,
         0 0 0 16px #62d1ba;
+    }
   }
-}
 
   .type__input:active + .type__label {
     &::before {

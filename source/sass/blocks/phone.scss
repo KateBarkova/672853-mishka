@@ -3,6 +3,10 @@
   padding-bottom: 20px;
 }
 
+.phone__wrapper {
+  position: relative;
+}
+
 .phone__title {
   margin-bottom: 5px;
 }
@@ -17,6 +21,7 @@
   color: $base-color-text;
   cursor: pointer;
 
+
   &:hover,
   &:focus,
   &:active {
@@ -26,30 +31,43 @@
 }
 
 .phone__input[placeholder] {
-  line-height: #{$base-line-height - 6px};
+  line-height: 18px;
   font-weight: 400;
 }
 
 .phone__input::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .phone__input::-moz-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .phone__input:-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
+.phone__icon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+}
+
+.phone__input:hover + .phone__icon,
+.phone__input:focus + .phone__icon,
+.phone__input:active + .phone__icon {
+  fill: $color-blue-underline;
+}
 
 @media (min-width: $tablet-width) {
   .phone {
-    background-color: #f1f1f1;
+    background-color: $color-grey;
+    padding-bottom: 25px;
   }
 
   .phone__wrapper {
-    padding-bottom: 0;
+    padding: 0;
+    margin-top: 50px;
   }
 
   .phone__input {
@@ -58,6 +76,17 @@
   }
 
   .phone__input[placeholder] {
-    background-color: #f1f1f1;
+    background-color: $color-grey;
+  }
+
+  .phone__icon {
+    right: 20px;
+    top: 30%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone__icon {
+    right: 0;
   }
 }

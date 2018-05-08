@@ -1,7 +1,6 @@
 .product-week {
   background: url("../img/bg-zigzag-line.svg") repeat-x bottom;
   background-size: auto 5px;
-
 }
 
 .product-week__container {
@@ -17,7 +16,7 @@
   @include indent-reset;
   margin-bottom: 22px;
 
-  @include font($base-font-size, #{$base-line-height - 4px});
+  @include font($base-font-size, $base-line-height-small);
   color: $color-blue;
   text-transform: uppercase;
 }
@@ -25,25 +24,25 @@
 .product-week__text {
   @include indent-reset;
   margin-bottom: 16px;
-  font-size: #{$base-font-size - 2px};
+  font-size: 15px;
   font-weight: 400;
   color: $base-color-text;
 }
 
 .product-week__property {
-  display: block;
-
   @include indent-reset;
-  @include font(#{$base-font-size - 2px}, #{$base-line-height - 4px});
+  display: block;
+  margin-bottom: 24px;
+
+  @include font(15px, $base-line-height-small);
   font-weight: 400;
   color: $base-color-text;
-  margin-bottom: 24px;
 }
 
 .product-week__cell {
   min-width: 95px;
-  border-bottom: 1px solid #ececec;
   padding: 10px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .product-week__cost {
@@ -86,10 +85,10 @@
   }
 
   .product-week__title {
-    line-height: 17px;
     max-width: 115px;
-    text-align: center;
     margin-top: 10px;
+    line-height: 17px;
+    text-align: center;
   }
 
   .product-week__wrapper {
@@ -100,7 +99,8 @@
   .product-week__text {
     margin: 0;
     margin-bottom: 30px;
-    @include font(17px, 30px);
+
+    @include font($base-font-size, $base-line-height-big);
   }
 
   .product-week__photo {
@@ -111,7 +111,8 @@
 
   .product-week__cost {
     margin: 30px 0 35px;
-    @include font(20px, 24px);
+
+    @include font(20px, $base-line-height);
   }
 
   .product-week__btn {

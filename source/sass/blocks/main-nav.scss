@@ -56,7 +56,7 @@
     align-self: center;
 
     @include indent-reset;
-    @include font(15px, 24px);
+    @include font(15px, $base-line-height-small);
     font-weight: 400;
     color: $base-color-text;
   }
@@ -97,8 +97,5 @@
   .main-nav__product {
     order: 3;
     flex-grow: 1;
-  }
-
-  .main-nav__delivery {
   }
 }

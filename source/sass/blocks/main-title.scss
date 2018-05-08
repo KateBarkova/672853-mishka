@@ -2,7 +2,7 @@
   @include indent-reset;
   padding: 72px 30px 75px;
 
-  @include font(#{$base-font-size + 10px}, #{$base-line-height + 6px});
+  @include font(27px, $base-line-height-big);
   background-color: $color-grey;
   text-align: center;
   position: relative;
@@ -25,11 +25,11 @@
 
     @include font(43px, 50px);
 
-     &::before {
+    &::before {
       content: "";
       position: absolute;
       display: block;
-      bottom: 0px;
+      bottom: 0;
       right: 0;
       width: 100%;
       height: 15px;

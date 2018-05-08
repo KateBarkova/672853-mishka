@@ -2,7 +2,7 @@
   @include indent-reset;
   padding: 75px 30px;
 
-  @include font(#{$base-font-size + 10px}, #{$base-line-height + 6px});
+  @include font(27px, $base-line-height-big);
   background-color: $color-grey;
   text-align: center;
   position: relative;
@@ -12,7 +12,7 @@
 .main-form__text {
   @include indent-reset;
   padding: 25px 30px 23px;
-  font-size: #{$base-font-size - 4px};
+  font-size: 13px;
   color: $base-color-text;
   font-weight: 400;
 }
@@ -25,46 +25,17 @@
     padding: 105px 0 80px;
 
     @include font(43px, 50px);
-
-    &::before {
-      content: "";
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-repeat: repeat;
-      height: 15px;
-      background-size: 40px 20px;
-      background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
-    }
-
-    &::after {
-      content: "";
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-repeat: repeat;
-      height: 10px;
-      background-size: 20px 20px;
-      background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
-    }
   }
 
   .main-form__text {
     margin: 70px 50px 22px;
     padding: 0;
 
-    @include font(17px, 30px);
+    @include font($base-font-size, $base-line-height-big);
   }
 }
 
 @media (min-width: $desktop-width) {
-  // .main-form__title {
-  //   @include font(53px, 57px);
-  //   padding-bottom: 105px;
-  // }
-
   .main-form__text {
     display: block;
     margin: 120px auto 30px;

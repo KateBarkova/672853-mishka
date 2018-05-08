@@ -1,6 +1,10 @@
 .email {
+  padding-bottom: 15px;
   font-family: $base-font-family;
-  padding-bottom: 20px;
+}
+
+.email__wrapper {
+  position: relative;
 }
 
 .email__title {
@@ -26,26 +30,38 @@
 }
 
 .email__input[placeholder] {
-  line-height: #{$base-line-height - 6px};
+  line-height: $base-line-height-small;
   font-weight: 400;
 }
 
 .email__input::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .email__input::-moz-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .email__input:-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
+}
+
+.email__icon {
+  position: absolute;
+  right: 5px;
+  top: 40%;
+}
+
+.email__input:hover + .email__icon,
+.email__input:focus + .email__icon,
+.email__input:active + .email__icon {
+  fill: $color-blue-underline;
 }
 
 @media (min-width: $tablet-width) {
   .email {
-    background-color: #f1f1f1;
     padding-bottom: 50px;
+    background-color: $color-grey;
   }
 
   .email__wrapper {
@@ -58,12 +74,22 @@
   }
 
   .email__input[placeholder] {
-    background-color: #f1f1f1;
+    background-color: $color-grey;
+  }
+
+  .email__icon {
+    right: 20px;
+    top: 30%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .email__wrapper {
     padding-top: 17px;
+  }
+
+  .email__icon {
+    right: 0;
+    top: 30%;
   }
 }

@@ -5,32 +5,21 @@
 .contacts__title {
   @include indent-reset;
   padding: 35px 0 25px;
-  // @include font(#{$base-font-size + 1px}, #{$base-line-height + 6px});
+
+  @include font(18px, $base-line-height-big);
 }
 
-.contacts__image {
-  position: absolute;
-  bottom: 0;
-  z-index: -100;
-}
-
-.contacts__map {
-  position: relative;
-  height: 457px;
-}
-
-
-@media (max-width: 320px) {
-  .contacts__title {
-    @include font(#{$base-font-size + 1px}, #{$base-line-height + 6px});
-  }
-}
+// @media (max-width: 320px) {
+//   .contacts__title {
+//     @include font(18px, $base-line-height-big);
+//   }
+// }
 
 .contacts__table {
   margin: 0 0 10px;
   border-collapse: collapse;
 
-  @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
+  @include font(15px, $base-line-height-big);
   font-weight: 400;
 }
 
@@ -63,8 +52,16 @@
   }
 }
 
+.contacts__image {
+  position: absolute;
+  bottom: 0;
+  z-index: -100;
+}
+
 .contacts__map {
-  margin-bottom: 30px;
+  position: relative;
+  height: 457px;
+  margin-bottom: 34px;
 }
 
 .contacts__map-google {
@@ -72,14 +69,15 @@
 }
 
 .contacts__write {
-  @include font(#{$base-font-size +1px}, #{$base-line-height - 4px});
   margin: 0 30px 40px;
+
+  @include font(18px, $base-line-height-small);
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     position: relative;
-    margin: 60px 0 55px;
+    margin: 60px 0 57px;
   }
 
   .contacts__wrapper {
@@ -91,6 +89,8 @@
     position: relative;
     padding: 0;
     margin-bottom: 50px;
+
+    @include font(43px, 50px);
 
     &::before {
       content: "";
@@ -120,7 +120,7 @@
   }
 
   .contacts__cell {
-    font-size: 17px;
+    font-size: $base-font-size;
 
     &--address {
       min-width: 230px;
@@ -128,15 +128,14 @@
   }
 
   .contacts__map {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .contacts__write {
     min-width: 230px;
     max-width: 230px;
     margin: 0 auto;
-    font-size: 17px;
-
+    font-size: $base-font-size;
   }
 }
 
@@ -154,6 +153,8 @@
   }
 
   .contacts__title {
+    @include font(53px, 57px);
+
     &::before {
       left: -105px;
     }
@@ -165,8 +166,8 @@
 
   .contacts__row {
     margin-bottom: 30px;
-
   }
+
   .contacts__table {
     margin-bottom: 45px;
   }

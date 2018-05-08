@@ -131,6 +131,9 @@
             <legend class="phone__title form__title">Тел</legend>
             <label class="visually-hidden" for="user-phone">Тел</label>
             <input class="phone__input" type="tel" name="user-phone" id="user-phone" placeholder="+7 XXX XX XX*" required>
+            <svg class="phone__icon" width="25px" height="24px">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="email form__fieldset">
@@ -138,13 +141,16 @@
             <legend class="email__title form__title">E-mail</legend>
             <label class="visually-hidden" for="user-email">E-mail</label>
             <input class="email__input" type="email" name="user-email" id="user-email" placeholder=" Ваш Email*" required>
+            <svg class="email__icon" width="32px" height="32px">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="comment form__fieldset">
           <div class="form__wrapper">
             <legend class="comment__title form__title">Доп</legend>
             <label class="visually-hidden" for="user-comment">Доп</label>
-            <textarea class="comment__textarea" name="user-comment" id="user-comment" rows="6">Опишите все ваши пожелания к заказу</textarea>
+            <textarea class="comment__textarea" name="user-comment" id="user-comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
           </div>
         </fieldset>
         <div class="form__footer">
@@ -161,19 +167,34 @@
       </a>
       <ul class="footer__list social">
         <li class="social__item">
-          <a href="#" class="social__btn social__btn--instagram">Инстаграм</a>
+          <a href="#" class="social__btn social__btn--instagram">
+            Инстаграм
+            <svg width="22" height="21" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__btn social__btn--fb">Фэйсбук</a>
+          <a href="#" class="social__btn social__btn--fb">
+            Фэйсбук
+            <svg width="15" height="28" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+        </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__btn social__btn--twitter">Твиттер</a>
+          <a href="#" class="social__btn social__btn--twitter">
+          Твиттер
+          <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
         </li>
       </ul>
       <p class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="37" height="44" svg xmlns="http://www.w3.org/2000/svg">
+          <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>

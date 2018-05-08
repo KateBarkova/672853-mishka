@@ -6,7 +6,7 @@
 }
 
 .feedback__title {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .feedback__list {
@@ -15,7 +15,7 @@
 
 .feedback__text {
   @include indent-reset;
-  @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
+  @include font(15px, $base-line-height-big);
   font-weight: 400;
   color: $base-color-text;
 }
@@ -33,7 +33,7 @@
 }
 
 .feedback__email {
-  @include font($base-font-size, #{$base-line-height + 6px});
+  @include font($base-font-size, $base-line-height-big);
 }
 
 .feedback__user {
@@ -47,14 +47,14 @@
 }
 
 .feedback__next {
+  margin-bottom: 30px;
   background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 30px;
 }
 
 .feedback__write {
-  font-size: #{$base-font-size + 1px};
+  font-size: 18px;
 }
 
 .feedback__wrapper {
@@ -95,6 +95,7 @@
   .feedback__write {
     order: 1;
     min-width: 175px;
+    font-size: $base-font-size;
   }
 
   .feedback__list {
@@ -125,17 +126,12 @@
   .feedback__username {
     font-size: 18px;
   }
-
-  .feedback__write {
-    font-size: $base-font-size;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
     margin: 152px 50px 145px;
     padding: 0 0 155px 177px;
-
     background-size: auto 22px;
 
     &::before {
@@ -143,6 +139,7 @@
       top: -70px;
     }
   }
+
   .feedback__text p {
     margin-bottom: 42px;
     max-width: 780px;
@@ -161,5 +158,4 @@
     bottom: 145px;
     right: 0;
   }
-
 }

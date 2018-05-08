@@ -8,7 +8,7 @@
 
 .about-us__item {
   padding-top: 83px;
-  line-height: #{$base-line-height - 4px};
+  line-height: $base-line-height-small;
   background-repeat: no-repeat;
   background-position: left 30px;
 
@@ -51,8 +51,9 @@
   }
 
   .about-us__item {
-    @include font(20px, 22px);
     padding: 105px 0 7px;
+
+    @include font(20px, 22px);
     background-position: left 55px;
   }
 
@@ -84,7 +85,7 @@
     }
   }
 
-    .about-us__wrapper--small .about-us__item {
-      background-position: 10px 50px;
-    }
+  .about-us__wrapper--small .about-us__item {
+    background-position: 10px 50px;
+  }
 }

@@ -1,6 +1,6 @@
 .user {
-  font-family: $base-font-family;
   margin-bottom: 10px;
+  font-family: $base-font-family;
 }
 
 .user__item {
@@ -9,8 +9,8 @@
 
 .user__label {
   display: block;
-  line-height: #{$base-line-height - 6px};
   margin-bottom: 5px;
+  line-height: 18px;
   cursor: pointer;
 }
 
@@ -34,20 +34,20 @@
 }
 
 .user__input[placeholder] {
-  line-height: #{$base-line-height - 6px};
+  line-height: 18px;
   font-weight: 400;
 }
 
 .user__input::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .user__input::-moz-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .user__input:-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 @media (min-width: $tablet-width) {
@@ -64,7 +64,6 @@
 
   .user__label {
     margin-right: 25px;
-
     font-size: 19px;
   }
 
