@@ -10,7 +10,6 @@
 }
 
 .main-form__text {
-  @include indent-reset;
   padding: 25px 30px 23px;
   font-size: 13px;
   color: $base-color-text;
@@ -18,18 +17,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-form__title {
-    margin-top: -65px;
-    border-top: 1px solid #ececec;
-    position: relative;
-    padding: 105px 0 80px;
-
-    @include font(43px, 50px);
-  }
 
   .main-form__text {
-    margin: 70px 50px 22px;
+    margin: 70px auto 70px;
     padding: 0;
+    max-width: 668px;
 
     @include font($base-font-size, $base-line-height-big);
   }

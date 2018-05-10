@@ -41,8 +41,9 @@
 
 @media (min-width: $tablet-width) {
   .color {
-    padding: 20px 0 15px;
+    padding: 65px 0 13px;
     background-color: $color-grey;
+    margin-bottom: 60px;
   }
 
   .color__list {
@@ -56,7 +57,7 @@
   }
 
   .color__label {
-    padding: 0 0 56px 80px;
+    padding: 0 0 58px 80px;
 
     &::before {
       width: 54px;
@@ -67,6 +68,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .color {
+    padding: 20px 0 13px;
+    margin-bottom: 15px;
+  }
+
   .color__item {
     width: 265px;
 

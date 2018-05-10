@@ -117,6 +117,7 @@
     max-width: 370px;
     padding: 0 57px 0 75px;
     box-sizing: border-box;
+    min-height: 455px;
   }
 
   .making__title {
@@ -131,7 +132,7 @@
 
   .making__image {
     position: absolute;
-    left: 0;
+    left: 50px;
     border: none;
   }
 

@@ -58,13 +58,13 @@
       </nav>
     </header>
     <main class="main-form">
-      <div class="page-wrapper">
+      <div class="intro">
         <h1 class="main-title container">Вязание на заказ</h1>
       </div>
-      <p class="main-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form container" method="post" action="https://echo.htmlacademy.ru">
+      <p class="main-form__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="type form__fieldset">
-          <div class="form__wrapper">
+          <div class="form__wrapper container">
             <legend class="type__title form__title">Тип</legend>
             <ul class="type__list form__list">
               <li class="type__item">
@@ -79,7 +79,7 @@
           </div>
         </fieldset>
         <fieldset class="color form__fieldset">
-          <div class="form__wrapper form__wrapper--big">
+          <div class="form__wrapper form__wrapper--big container">
             <legend class="color__title form__title">Цвет</legend>
             <ul class="color__list  form__list">
               <li class="color__item">
@@ -110,7 +110,7 @@
           </div>
         </fieldset>
         <fieldset class="user form__fieldset">
-          <div class="form__wrapper">
+          <div class="form__wrapper container">
             <legend class="user__title form__title">ФИО</legend>
             <div class="form__container">
               <p class="user__item">
@@ -129,7 +129,7 @@
           </div>
         </fieldset>
         <fieldset class="phone form__fieldset">
-          <div class="form__wrapper phone__wrapper">
+          <div class="form__wrapper phone__wrapper container">
             <legend class="phone__title form__title">Тел</legend>
             <label class="visually-hidden" for="user-phone">Тел</label>
             <input class="phone__input" type="tel" name="user-phone" id="user-phone" placeholder="+7 XXX XX XX*" required>
@@ -139,7 +139,7 @@
           </div>
         </fieldset>
         <fieldset class="email form__fieldset">
-          <div class="form__wrapper email__wrapper">
+          <div class="form__wrapper email__wrapper container">
             <legend class="email__title form__title">E-mail</legend>
             <label class="visually-hidden" for="user-email">E-mail</label>
             <input class="email__input" type="email" name="user-email" id="user-email" placeholder=" Ваш Email*" required>
@@ -149,13 +149,13 @@
           </div>
         </fieldset>
         <fieldset class="comment form__fieldset">
-          <div class="form__wrapper">
+          <div class="form__wrapper container">
             <legend class="comment__title form__title">Доп</legend>
             <label class="visually-hidden" for="user-comment">Доп</label>
             <textarea class="comment__textarea" name="user-comment" id="user-comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
           </div>
         </fieldset>
-        <div class="form__footer">
+        <div class="form__footer container">
           <p class="form__text">*Поля обязательны для заполнения</p>
           <button class="form__button button" type="submit">Отправить заказ</button>
         </div>

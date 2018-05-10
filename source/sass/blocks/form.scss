@@ -7,8 +7,9 @@
 }
 
 .form__fieldset {
-  @include indent-reset;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form__title {
@@ -64,13 +65,13 @@
   .form__wrapper {
     display: flex;
     align-items: baseline;
-    padding-top: 50px;
-    margin: 0 50px;
+    padding: 0 50px;
+    margin-bottom: 0;
   }
 
   .form__title {
     min-width: 167px;
-    padding: 0;
+    padding-left: 0;
 
     &::after {
       display: none;
@@ -109,19 +110,22 @@
 @media (min-width: $desktop-width) {
   .form__wrapper {
     padding-top: 45px;
-    margin: 0 225px 0 110px;
+    padding: 45px 225px 0 50px;
 
     &--big {
-      margin-right: 100px;
+      padding-right: 100px;
     }
   }
 
   .form__title {
-    min-width: 112px;
+    min-width: 175px;
+    padding-left: 62px;
+    box-sizing: border-box;
   }
 
   .form__footer {
-    margin: 0 auto;
+    padding: 0;
+    margin: 0 auto 50px;
     max-width: 700px;
   }
 }

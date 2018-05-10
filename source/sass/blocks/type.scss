@@ -49,6 +49,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .type {
+    margin-bottom: 12px;
+  }
   .type__title {
     margin: 0;
   }
@@ -81,5 +84,11 @@
         0 0 0 14px white,
         0 0 0 16px #c7c7c7;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    margin-bottom: 8px;
   }
 }
