@@ -1,3 +1,7 @@
+.index-catalog {
+  position: relative;
+  }
+
 .index-catalog__list {
   @include list-reset;
 }
@@ -58,6 +62,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .index-catalog {
+    margin: 0 50px;
+  }
+
   .index-catalog__list {
     display: flex;
     margin-top: -120px;

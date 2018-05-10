@@ -110,13 +110,12 @@
 @media (min-width: $desktop-width) {
   .making {
     position: relative;
-    margin-left: 50px;
   }
 
   .making__wrapper {
     margin: 0 50px 105px auto;
-    max-width: 367px;
-    padding: 0 57px 0 78px;
+    max-width: 370px;
+    padding: 0 57px 0 75px;
     box-sizing: border-box;
   }
 
@@ -133,9 +132,10 @@
   .making__image {
     position: absolute;
     left: 0;
+    border: none;
   }
 
   .making__order {
-    margin: 0 0 59px;
+    margin: 0 0 58px;
   }
 }
