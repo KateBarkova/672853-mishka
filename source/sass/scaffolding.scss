@@ -9,7 +9,6 @@ body {
   color: $color-black;
   outline: 1px solid red;
   width: 320px;
-
 }
 
 a {
@@ -50,9 +49,9 @@ a {
   }
 }
 
-  .main-page .intro {
-    background-color: #f9f9f9;
-  }
+.main-page .intro {
+  background-color: #f9f9f9;
+}
 
 @media (min-width: $desktop-width) {
   .container {
@@ -60,7 +59,7 @@ a {
   }
 
   .page-wrapper {
-      &::before {
+    &::before {
       height: 18px;
       background: url("../img/bg-zigzag-fill.svg") repeat-x top;
       background-size: auto 38px;

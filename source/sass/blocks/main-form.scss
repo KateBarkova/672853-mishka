@@ -1,14 +1,3 @@
-.main-form__title {
-  @include indent-reset;
-  padding: 75px 30px;
-
-  @include font(27px, $base-line-height-big);
-  background-color: $color-grey;
-  text-align: center;
-  position: relative;
-  z-index: -100;
-}
-
 .main-form__text {
   padding: 25px 30px 23px;
   font-size: 13px;
@@ -17,7 +6,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .main-form__text {
     margin: 70px auto 70px;
     padding: 0;

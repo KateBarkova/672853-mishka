@@ -1,5 +1,6 @@
 .phone {
   font-family: $base-font-family;
+  line-height: 18px;
   padding-bottom: 20px;
 }
 
@@ -30,27 +31,16 @@
   }
 }
 
-.phone__input[placeholder] {
-  line-height: 18px;
+.phone__input::placeholder {
+  color: rgba($base-color-text, $alpha);
   font-weight: 400;
-}
-
-.phone__input::-webkit-input-placeholder {
-  color: rgba($base-color-text, $alpha);
-}
-
-.phone__input::-moz-placeholder {
-  color: rgba($base-color-text, $alpha);
-}
-
-.phone__input:-ms-input-placeholder {
-  color: rgba($base-color-text, $alpha);
 }
 
 .phone__icon {
   position: absolute;
   right: 5px;
   top: 50%;
+  fill: #cccccc;
 }
 
 .phone__input:hover + .phone__icon,
@@ -73,9 +63,6 @@
   .phone__input {
     padding: 15px 0 12px 15px;
     font-size: 19px;
-  }
-
-  .phone__input[placeholder] {
     background-color: $color-grey;
   }
 

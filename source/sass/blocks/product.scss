@@ -110,6 +110,8 @@
 
   .product__photo {
     display: block;
+    position: relative;
+    z-index: 1;
   }
 }
 

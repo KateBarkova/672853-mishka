@@ -55,7 +55,7 @@
 .contacts__image {
   position: absolute;
   bottom: 0;
-  z-index: -100;
+  z-index: 1;
 }
 
 .contacts__map {
@@ -65,7 +65,9 @@
 }
 
 .contacts__map-google {
+  position: relative;
   height: 457px;
+  z-index: 2;
 }
 
 .contacts__write {
@@ -132,17 +134,16 @@
   }
 
   .contacts__write {
-    min-width: 230px;
-    max-width: 230px;
+    width: 230px;
     margin: 0 auto;
     font-size: $base-font-size;
+    display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     margin: 0 50px 105px;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
