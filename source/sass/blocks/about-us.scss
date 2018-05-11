@@ -7,13 +7,14 @@
 }
 
 .about-us__item {
-  padding-top: 75px;
-  line-height: #{$base-line-height - 4px};
+  padding-top: 83px;
+  line-height: $base-line-height-small;
   background-repeat: no-repeat;
-  background-position: left 15px;
+  background-position: left 30px;
 
   &--material {
     background-image: url("../img/icon-feature-flower.svg");
+    background-position: 7px 30px;
   }
 
   &--style {
@@ -22,6 +23,7 @@
 
   &--like {
     background-image: url("../img/icon-feature-heart.svg");
+    background-position: 7px 35px;
   }
 
   &--handmade {
@@ -30,6 +32,7 @@
 
   &--domestic {
     background-image: url("../img/icon-feature-rocket.svg");
+    background-position: left 35px;
   }
 
   &--pack {
@@ -45,18 +48,18 @@
 
   .about-us__list {
     display: flex;
-    margin-bottom: 170px;
   }
 
   .about-us__item {
+    padding: 105px 0 7px;
+
     @include font(20px, 22px);
-    padding-top: 125px;
     background-position: left 55px;
   }
 
   .about-us__wrapper {
     &--small {
-      flex-basis: 250px;
+      flex-basis: 240px;
       box-sizing: border-box;
       margin-right: 94px;
     }
@@ -69,6 +72,20 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin: 65px 250px;
+    margin: 60px 220px;
+  }
+
+  .about-us__item {
+    padding: 100px 0 12px;
+  }
+
+  .about-us__wrapper {
+    &--small {
+      flex-basis: 260px;
+    }
+  }
+
+  .about-us__wrapper--small .about-us__item {
+    background-position: 10px 50px;
   }
 }

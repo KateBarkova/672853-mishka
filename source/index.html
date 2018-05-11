@@ -9,10 +9,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-nav container">
+    <header class="main-header container">
+      <nav class="main-nav">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">Меню</button>
         <ul class="main-menu main-nav__main">
@@ -26,16 +30,16 @@
         <ul class="user-menu main-nav__user">
           <li class="user-menu__item">
             <a href="#" class="user-menu__link user-menu__link--hidden">
-              <svg class="user-menu__icon" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                <path fill="#d3d2d2" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+              <svg class="user-menu__icon" x="0px" y="0px" width="17.6px" height="17.6px">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
               Поиск по сайту
           </a>
           </li>
           <li class="user-menu__item">
             <a href="#" class="user-menu__link">
-              <svg class="user-menu__icon" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                <path fill="#d3d2d2" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+              <svg class="user-menu__icon" x="0px" y="0px" width="20.294px" height="18.849px">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
               Корзина:
               <span class="user-menu__cart">пока пуста</span>
@@ -55,127 +59,163 @@
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Магазин Мишка</h1>
-      <h2 class="main-title main-title--index">Милые штуки ручной<br> работы для дома</h2>
-      <section class="index-catalog container">
-        <h3 class="visually-hidden">Категории</h3>
-        <ul class="index-catalog__list">
-          <li class="index-catalog__item">
-            <a href="#" class="index-catalog__link index-catalog__link--interior">Предметы интерьера</a>
-          </li>
-          <li class="index-catalog__item">
-            <a href="#" class="index-catalog__link index-catalog__link--toy">Детские игрушки</a>
-          </li>
-        </ul>
-      </section>
-      <section class="product-week">
-        <div class="product-week__container">
-          <h3 class="product-week__name title">Вязаные корзинки</h3>
-          <h4 class="product-week__title">Товар недели</h4>
-          <div class="product-week__wrapper">
-            <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="product-week__property">
-              <tr class="product-week__row">
-                <td class="product-week__cell">Цвет:</td>
-                <td class="product-week__cell">«Тиффани»/серый</td>
+      <div class="intro">
+        <h2 class="main-title main-title--index container">Милые штуки ручной<br> работы для дома</h2>
+        <section class="index-catalog container">
+          <h3 class="visually-hidden">Категории</h3>
+          <ul class="index-catalog__list">
+            <li class="index-catalog__item">
+              <a href="#" class="index-catalog__link index-catalog__link--interior">Предметы интерьера</a>
+            </li>
+            <li class="index-catalog__item">
+              <a href="#" class="index-catalog__link index-catalog__link--toy">Детские игрушки</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="container">
+        <section class="product-week">
+          <div class="product-week__container">
+            <h3 class="product-week__name title">Вязаные корзинки</h3>
+            <h4 class="product-week__title">Товар недели</h4>
+            <div class="product-week__wrapper">
+              <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+              <table class="product-week__property">
+                <tr class="product-week__row">
+                  <td class="product-week__cell">Цвет:</td>
+                  <td class="product-week__cell">«Тиффани»/серый</td>
+                </tr>
+                <tr class="product-week__row">
+                  <td class="product-week__cell">Диаметр:</td>
+                  <td class="product-week__cell">25 см</td>
+                </tr>
+                <tr class="product-week__row">
+                  <td class="product-week__cell">Высота:</td>
+                  <td class="product-week__cell">15 см</td>
+                </tr>
+              </table>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/-triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="product-week__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
+            </picture>
+            <div class="product-week__wrapper">
+              <p class="product-week__cost">
+                Цена:
+                <span class="product-week__price">990 руб.</span>
+              </p>
+              <button class="product-week__btn button" type="button">Заказать</button>
+            </div>
+          </div>
+        </section>
+        <section class="about-us">
+          <h3 class="about-us__title title">Коротко о нас:</h3>
+          <ul class="about-us__list">
+            <div class="about-us__wrapper about-us__wrapper--small">
+              <li class="about-us__item about-us__item--material">Экологически чистые&nbsp;материалы</li>
+              <li class="about-us__item about-us__item--style">Скандинавский стиль по&nbsp;российской цене</li>
+              <li class="about-us__item about-us__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
+            </div>
+            <div class="about-us__wrapper  about-us__wrapper--big">
+              <li class="about-us__item about-us__item--handmade">Связано вручную с любовью&nbsp;и умилением</li>
+              <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
+              <li class="about-us__item about-us__item--pack">Поставляется в подарочной&nbsp;упаковке</li>
+            </div>
+          </ul>
+        </section>
+        <section class="feedback">
+          <h3 class="feedback__title title">Отзывы</h3>
+          <ul class="feedback__list">
+            <li class="feedback__item">
+              <blockquote class="feedback__text">
+                <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                </p>
+                <footer class="feedback__user">
+                  <cite class="feedback__username">Анастасия Красильникова</cite>
+                  <span class="feedback__email">@misssssiskras</span>
+                </footer>
+              </blockquote>
+            </li>
+          </ul>
+          <div class="feedback__wrapper">
+            <button class="feedback__back button button--direction" type="button">Назад</button>
+            <button class="feedback__next button button--direction" type="button">Вперед</button>
+          </div>
+          <a href="#" class="feedback__write button">Написать</a>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <h3 class="contacts__title title">Контакты</h3>
+            <table class="contacts__table">
+              <tr class="contacts__row">
+                <td class="contacts__cell">e-mail:</td>
+                <td class="contacts__cell">
+                  <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
+                </td>
               </tr>
-              <tr class="product-week__row">
-                <td class="product-week__cell">Диаметр:</td>
-                <td class="product-week__cell">25 см</td>
-              </tr>
-              <tr class="product-week__row">
-                <td class="product-week__cell">Высота:</td>
-                <td class="product-week__cell">15 см</td>
+              <tr class="contacts__row">
+                <td class="contacts__cell">адрес:</td>
+                <td class="contacts__cell contacts__cell--address">г. Санкт-Петербург,
+                  ул.&nbsp;Большая Конюшенная,
+                  д.&nbsp;19/8, офис 101</td>
               </tr>
             </table>
           </div>
-          <img class="product-week__photo" src="img/triple-set-mobile@1x.jpg" alt="Фото товара" width="260" height="315">
-          <div class="product-week__wrapper">
-            <p class="product-week__cost">
-              Цена:
-              <span class="product-week__price">990 руб.</span>
-            </p>
-            <button class="product-week__btn button" type="button">Заказать</button>
+          <div class="contacts__map">
+            <div class="contacts__map-google" id="map"></div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Как до нас добраться">
+            </picture>
           </div>
-        </div>
-      </section>
-      <section class="about-us">
-        <h3 class="about-us__title title">Коротко о нас:</h3>
-        <ul class="about-us__list">
-          <div class="about-us__wrapper about-us__wrapper--small">
-            <li class="about-us__item about-us__item--material">Экологически чистые материалы</li>
-            <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</li>
-          </div>
-          <div class="about-us__wrapper  about-us__wrapper--big">
-            <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
-            <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
-            <li class="about-us__item about-us__item--pack">Поставляется в подарочной упаковке</li>
-          </div>
-        </ul>
-      </section>
-      <section class="feedback">
-        <h3 class="feedback__title title">Отзывы</h3>
-        <ul class="feedback__list">
-          <li class="feedback__item">
-            <blockquote class="feedback__text">
-              <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </p>
-              <footer class="feedback__user">
-                <cite class="feedback__username">Анастасия Красильникова</cite>
-                <span class="feedback__email">@misssssiskras</span>
-              </footer>
-            </blockquote>
-          </li>
-        </ul>
-        <div class="feedback__wrapper">
-          <button class="feedback__back button button--direction" type="button">Назад</button>
-          <button class="feedback__next button button--direction" type="button">Вперед</button>
-        </div>
-        <a href="#" class="feedback__write button">Написать</a>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h3 class="contacts__title title">Контакты</h3>
-          <table class="contacts__table">
-            <tr class="contacts__row">
-              <td class="contacts__cell">e-mail:</td>
-              <td class="contacts__cell">
-                <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
-              </td>
-            </tr>
-            <tr class="contacts__row">
-              <td class="contacts__cell">адрес:</td>
-              <td class="contacts__cell contacts__cell--address">г. Санкт-Петербург,
-                ул. Большая Конюшенная,
-                д.&nbsp;19/8, офис 101</td>
-            </tr>
-          </table>
-        </div>
-        <div class="contacts__map">
-          <img class="contacts__image" src="img/map-mobile@1x.jpg" alt="Как до нас добраться" width="322" height="457">
-        </div>
-        <a class="contacts__write button" href="#">Напишите нам</a>
-      </section>
+          <a class="contacts__write button" href="#">Напишите нам</a>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-      <a class="footer__logo"><img class="footer__logo-icon" src="img/logo-mobile.svg" width="102" height="34" alt="Магазин Мишка"></a>
-      <ul class="footer__list social">
-        <li class="social__item">
-          <a href="#" class="social__btn social__btn--instagram">Инстаграм</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__btn social__btn--fb">Фэйсбук</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__btn social__btn--twitter">Твиттер</a>
-        </li>
-      </ul>
-      <p class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" alt="Html-academy" width="50" height="50">
+      <div class="footer__container container">
+        <a class="footer__logo">
+          <svg width="102" height="34">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
-      </p>
+        <ul class="footer__list social">
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--instagram">
+              Инстаграм
+              <svg width="22" height="21" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--fb">
+              Фэйсбук
+              <svg width="15" height="28" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+          </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--twitter">
+            Твиттер
+            <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          </li>
+        </ul>
+        <p class="footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#html-academy"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
     </footer>
     <section class="cart">
       <div class="cart__wrapper">
@@ -200,5 +240,41 @@
         </form>
       </div>
     </section>
+
+
+    <script type="text/javascript">
+      function initMap() {
+        var uluru = {lat: 59.938771377472285, lng: 30.32327415000009};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16.8,
+          center: uluru,
+          disableDefaultUI: true
+        });
+        var marker = new google.maps.Marker({
+          position: mark = {lat: 59.938771377472285, lng: 30.32327415000009},
+          map: map,
+          icon: {
+          url: "img/icon-map-pin.svg",
+          scaledSize: new google.maps.Size(67, 100)
+          }
+        });
+        var styles = [
+          { "featureType": "landscape.man_made",
+            "elementType": "geometry.fill",
+            "stylers": [ { "gamma": "0.3" } ]
+            },
+          { "featureType": "all",
+            "elementType": "labels.text.fill",
+            "stylers": [ { "color": "#2e1403" } ]
+            },
+          { "featureType": "all",
+            "elementType": "labels.icon",
+            "stylers": [ { "hue": "#2e1403"} ]
+            }];
+        map.setOptions({styles: styles});
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD01W6AL2vWIVDKVwSygLKkhlbMzeCyXAs&callback=initMap&language=en&region=EN">
+    </script>
   </body>
 </html>

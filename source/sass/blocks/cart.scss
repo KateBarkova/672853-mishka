@@ -1,11 +1,10 @@
 .cart {
-  text-align: center;
-
   @include section-padding;
+  text-align: center;
 }
 
 .cart__title {
-  padding: 0 60px;
+  padding: 0 55px;
   text-transform: uppercase;
 }
 
@@ -16,7 +15,7 @@
 .cart__text {
   border: none;
 
-  @include font(#{$base-font-size - 2px}, #{$base-line-height + 6px});
+  @include font(15px, $base-line-height-big);
   font-weight: 400;
   color: $base-color-text;
 }
@@ -75,8 +74,9 @@
   }
 
   .cart__title {
-    @include font(30px, 57px);
     padding: 0;
+
+    @include font(30px, 57px);
   }
 
   .cart__add {

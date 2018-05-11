@@ -1,16 +1,21 @@
 .form {
-  @include indent-reset;
-  @include section-padding;
+  padding: 0 30px;
+}
+
+.form__wrapper {
+  margin-bottom: 15px;
 }
 
 .form__fieldset {
-  @include indent-reset;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form__title {
-  padding: 30px 0;
-  line-height: #{$base-line-height - 8px};
+  padding: 0;
+  margin-bottom: 25px;
+  line-height: 16px;
   color: $color-blue;
   text-transform: uppercase;
   position: relative;
@@ -32,24 +37,24 @@
 
 .form__label {
   display: block;
-  padding: 10px 20px 10px 60px;
-  line-height: #{$base-line-height - 6px};
-  max-width: 145px;
+  padding: 10px 0 15px 60px;
+  line-height: 18px;
+  max-width: 160px;
 }
 
 .form__text {
   @include indent-reset;
-  margin: 20px 0 30px;
+  margin: 0 0 30px;
 
-  @include font(#{$base-font-size - 3px}, #{$base-line-height - 8px});
+  @include font(14px, 16px);
   font-weight: 400;
   color: $base-color-text;
 }
 
 .form__button {
-  line-height: #{$base-line-height - 8px};
-  margin: 0 auto;
-  min-width: 228px;
+  margin-bottom: 55px;
+  padding-bottom: 18px;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,12 +64,14 @@
 
   .form__wrapper {
     display: flex;
-    padding: 50px;
+    align-items: baseline;
+    padding: 0 50px;
+    margin-bottom: 0;
   }
 
   .form__title {
     min-width: 167px;
-    padding: 0;
+    padding-left: 0;
 
     &::after {
       display: none;
@@ -77,6 +84,7 @@
 
   .form__label {
     max-width: 100%;
+    font-size: 19px;
   }
 
   .form__footer {
@@ -89,16 +97,20 @@
 
   .form__text {
     margin: 0;
+
+    @include font($base-font-size, $base-line-height-big);
   }
 
   .form__button {
     margin: 0;
+    min-width: 230px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__wrapper {
-    padding: 50px 225px 50px 113px;
+    padding-top: 45px;
+    padding: 45px 225px 0 50px;
 
     &--big {
       padding-right: 100px;
@@ -106,10 +118,14 @@
   }
 
   .form__title {
-    min-width: 112px;
+    min-width: 175px;
+    padding-left: 62px;
+    box-sizing: border-box;
   }
 
   .form__footer {
-    padding: 0 225px 50px 225px;
+    padding: 0;
+    margin: 0 auto 50px;
+    max-width: 700px;
   }
 }

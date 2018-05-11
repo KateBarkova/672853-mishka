@@ -1,10 +1,17 @@
 .user {
+  margin-bottom: 10px;
   font-family: $base-font-family;
+}
+
+.user__item {
+  margin: 5px 0 21px;
 }
 
 .user__label {
   display: block;
-  line-height: #{$base-line-height - 6px};
+  margin-bottom: 5px;
+  line-height: 18px;
+  cursor: pointer;
 }
 
 .user__input {
@@ -16,6 +23,7 @@
   font: inherit;
   font-weight: 400;
   color: $base-color-text;
+  cursor: pointer;
 
   &:hover,
   &:focus,
@@ -26,35 +34,54 @@
 }
 
 .user__input[placeholder] {
-  line-height: #{$base-line-height - 6px};
+  line-height: 18px;
   font-weight: 400;
 }
 
 .user__input::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .user__input::-moz-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 .user__input:-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: rgba($base-color-text, $alpha);
 }
 
 @media (min-width: $tablet-width) {
+  .user {
+    margin: 10px 0 15px;
+  }
+
   .user__item {
     display: flex;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
+    align-items: baseline;
   }
 
   .user__label {
     margin-right: 25px;
+    font-size: 19px;
   }
 
   .user__input {
-    padding: 0;
-    padding-bottom: 10px;
+    padding: 0 0 15px 15px;
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user {
+    margin: 15px 0 17px;
+  }
+
+  .user__item {
+    margin-bottom: 34px;
+  }
+  .user__input {
+    padding-bottom: 13px;
   }
 }

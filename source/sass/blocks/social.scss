@@ -1,5 +1,6 @@
 .social {
   @include indent-reset;
+  margin-right: 5px;
 }
 
 .social__item {
@@ -7,24 +8,25 @@
 }
 
 .social__btn {
-  display: block;
-  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
   height: 35px;
-
+  fill: #221f1f;
   font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--instagram {
-    background-image: url("../img/icon-insta.svg");
-  }
 
   &--fb {
-    background-image: url("../img/icon-fb.svg");
-    margin: 0 30px;
+    margin: 0 12px;
   }
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }

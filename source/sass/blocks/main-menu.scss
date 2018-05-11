@@ -4,7 +4,7 @@
 
 .main-menu__link {
   display: block;
-  padding: 28px 0 28px 23.4%;
+  padding: 28px 0 27px 23.4%;
   text-decoration: none;
   color: black;
   box-shadow: $base-shadow;
@@ -26,17 +26,26 @@
   }
 
   .main-menu__link {
-    padding: 20px 0;
+    padding: 18px 0;
     min-width: 167px;
-    font-size: #{$base-font-size - 2px};
+    font-size: 15px;
     box-shadow: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-menu {
+    width: 445px;
+  }
+
+  .main-menu__item:last-child {
+    border-left: 1px solid #ececec;
+    padding-left: 35px;
+  }
+
   .main-menu__link {
-    padding: 32px 0;
+    padding: 32px 0 28px;
     font-size: $base-font-size;
-    min-width: 222px;
+    min-width: 185px;
   }
 }

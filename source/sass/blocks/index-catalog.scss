@@ -4,49 +4,81 @@
 
 .index-catalog__link {
   display: block;
-  padding: 30px 180px 30px 30px;
-  font-size: #{$base-font-size + 2px};
+  padding: 26px 180px 29px 30px;
+  font-size: 19px;
   color: $color-white;
-  background-repeat: no-repeat;
-  background-position: 80% center;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 62px;
+    right: 5%;
+  }
 
   &--interior {
-    background-image: url("../img/icon-interior.svg");
     background-color: $color-blue;
+
+    &::before {
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      opacity: 0.5;
+    }
   }
 
   &--toy {
-    background-image: url("../img/icon-toy.svg");
     background-color: #56c3b2;
+
+    &::before {
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      opacity: 0.5;
+    }
   }
 
   &:hover,
   &:focus {
     margin-top: -5px;
-    padding-bottom: 35px;
+    padding-bottom: 37px;
+
+    &::before {
+      opacity: 0.7;
+    }
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($color-white, $alpha);
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .index-catalog__list {
     display: flex;
-    margin-top: -130px;
+    margin: -120px 50px 0;
   }
+
+  .index-catalog__item {
+    width: 50%;
+  }
+
 
   .index-catalog__link {
     max-width: 100%;
     box-sizing: border-box;
-    padding: 35px 180px 35px 30px;
+    padding: 28px 180px 32px 35px;
 
-    @include font(20px, 30px);
+    @include font(20px, $base-line-height-big);
 
     &:hover,
     &:focus {
-      padding-bottom: 40px;
+      // padding-bottom: 40px;
     }
   }
 }
@@ -54,7 +86,7 @@
 
 @media (min-width: $desktop-width) {
   .index-catalog__link {
-    padding: 35px 360px 35px 30px;
-    background-position: 90% center;
+    padding: 28px 360px 32px 35px;
+    background-position: 92% center;
   }
 }

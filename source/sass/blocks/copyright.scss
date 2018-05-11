@@ -1,7 +1,46 @@
+.copyright {
+  @include indent-reset;
+  margin: 20px 38px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  svg {
+    fill: $color-blue;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
+  &:active .copyright__text {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .copyright__text {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+  color: black;
+  margin-right: 30px;
 
-  @include font(#{$base-font-size + 2px}, #{$base-line-height - 6px});
+  @include font(19px, $base-line-height-small);
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+  }
 }
