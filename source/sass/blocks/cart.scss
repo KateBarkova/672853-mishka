@@ -1,23 +1,36 @@
 .cart {
   @include section-padding;
+  padding-bottom: 45px;
   text-align: center;
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  z-index: 6;
+  transform: translateX(-50%);
+  background-color: $color-white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(#000101, 0.25);
+}
+
+.cart-show {
+  display: block;
 }
 
 .cart__title {
   padding: 0 55px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
-.cart__wrapper {
-  margin: 0 auto;
-}
-
 .cart__text {
-  border: none;
+  @include indent-reset;
+  margin-bottom: 30px;
 
   @include font(15px, $base-line-height-big);
   font-weight: 400;
   color: $base-color-text;
+  border: none;
 }
 
 .cart__size-list {
@@ -29,8 +42,10 @@
 }
 
 .cart__item {
+  box-sizing: border-box;
+  margin-right: 6px;
   flex-grow: 1;
-  margin-right: 10px;
+  width: 33%;
 
   &:last-child {
     margin-right: 0;
@@ -39,11 +54,12 @@
 
 .cart__size {
   display: block;
-  padding: 15px 20px;
-  outline: 2px solid #ececec;
-  min-width: 82px;
+  padding: 18px 15px;
+  border: 2px solid #ececec;
+  max-width: 100%;
   box-sizing: border-box;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .cart__add {
@@ -52,34 +68,40 @@
 
 .cart__input:hover + .cart__size,
 .cart__input:focus + .cart__size {
-  outline: 2px solid #c7c7c7;
+  border: 2px solid #c7c7c7;
 }
 
 .cart__input:active + .cart__size {
-  outline: 2px solid $color-blue-underline;
+  border: 2px solid $color-blue-underline;
 }
 
 .cart__input:checked + .cart__size {
-  outline: 2px solid $color-blue;
+  border: 2px solid $color-blue;
 }
 
 @media (min-width: $tablet-width) {
-  .cart__wrapper {
+  .cart {
     padding: 50px 105px;
-    margin: 0 auto;
-    max-width: 566px;
+    width: 566px;
     box-sizing: border-box;
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 5px 10px 0 rgba(#000101, 0.25);
   }
 
   .cart__title {
     padding: 0;
+    margin-bottom: 15px;
 
     @include font(30px, 57px);
   }
 
+  .cart__item {
+    margin-right: 9px;
+  }
+
+  .cart__text {
+    font-size: $base-font-size;
+  }
+
   .cart__add {
-    min-width: 100%;
+    width: 100%;
   }
 }

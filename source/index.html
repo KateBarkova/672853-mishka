@@ -218,7 +218,6 @@
       </div>
     </footer>
     <section class="cart">
-      <div class="cart__wrapper">
         <h3 class="cart__title title">Добавить в корзину</h3>
         <form class="cart__form">
           <fieldset class="cart__text">Выберите размер:</fieldset>
@@ -238,9 +237,8 @@
           </ul>
           <button class="cart__add button button--order" type="submit">Добавить</button>
         </form>
-      </div>
     </section>
-
+    <div class="overlay"></div>
 
     <script type="text/javascript">
       function initMap() {
@@ -274,6 +272,7 @@
         map.setOptions({styles: styles});
       }
     </script>
+    <script src="js/script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD01W6AL2vWIVDKVwSygLKkhlbMzeCyXAs&callback=initMap&language=en&region=EN">
     </script>
   </body>
