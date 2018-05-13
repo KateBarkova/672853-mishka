@@ -58,9 +58,8 @@ a {
     width: 1150px;
   }
 
-  .page-wrapper {
+  .intro {
     &::before {
-      height: 18px;
       background: url("../img/bg-zigzag-fill.svg") repeat-x top;
       background-size: auto 38px;
     }

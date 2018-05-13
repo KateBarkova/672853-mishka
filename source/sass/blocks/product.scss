@@ -82,6 +82,11 @@
     margin-bottom: 55px;
   }
 
+
+  .product__photo-link {
+    width: 50%;
+  }
+
   .product__title {
     font-size: 20px;
     margin-bottom: 7px;
@@ -118,8 +123,12 @@
 @media (min-width: $desktop-width) {
   .product {
     flex-direction: column;
-    max-width: 316px;
+    width: 316px;
     box-sizing: border-box;
+  }
+
+  .product__photo-link {
+    width: 100%;
   }
 
   .product__info {

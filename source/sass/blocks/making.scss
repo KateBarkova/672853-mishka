@@ -55,8 +55,6 @@
 
 .making__image img {
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 .making__text {
@@ -92,6 +90,7 @@
 
   .making__image {
     border-bottom: 1px solid #ececec;
+    width: 668px;
   }
 
   .making__text {
@@ -136,6 +135,7 @@
     position: absolute;
     left: 50px;
     border: none;
+    width: 682px;
   }
 
   .making__order {
