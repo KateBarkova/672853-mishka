@@ -1,6 +1,7 @@
 .email {
   padding-bottom: 15px;
   font-family: $base-font-family;
+  line-height: 18px;
 }
 
 .email__wrapper {
@@ -29,27 +30,16 @@
   }
 }
 
-.email__input[placeholder] {
-  line-height: $base-line-height-small;
+.email__input::placeholder {
+  color: rgba($base-color-text, $alpha);
   font-weight: 400;
-}
-
-.email__input::-webkit-input-placeholder {
-  color: rgba($base-color-text, $alpha);
-}
-
-.email__input::-moz-placeholder {
-  color: rgba($base-color-text, $alpha);
-}
-
-.email__input:-ms-input-placeholder {
-  color: rgba($base-color-text, $alpha);
 }
 
 .email__icon {
   position: absolute;
   right: 5px;
   top: 40%;
+  fill: #cccccc;
 }
 
 .email__input:hover + .email__icon,
@@ -72,9 +62,6 @@
   .email__input {
     padding: 0 0 13px 15px;
     font-size: 19px;
-  }
-
-  .email__input[placeholder] {
     background-color: $color-grey;
   }
 

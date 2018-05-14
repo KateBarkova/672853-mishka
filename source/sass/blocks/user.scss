@@ -1,6 +1,7 @@
 .user {
   margin-bottom: 10px;
   font-family: $base-font-family;
+  line-height: 18px;
 }
 
 .user__item {
@@ -33,20 +34,8 @@
   }
 }
 
-.user__input[placeholder] {
-  line-height: 18px;
+.user__input::placeholder {
   font-weight: 400;
-}
-
-.user__input::-webkit-input-placeholder {
-  color: rgba($base-color-text, $alpha);
-}
-
-.user__input::-moz-placeholder {
-  color: rgba($base-color-text, $alpha);
-}
-
-.user__input:-ms-input-placeholder {
   color: rgba($base-color-text, $alpha);
 }
 
@@ -81,6 +70,7 @@
   .user__item {
     margin-bottom: 34px;
   }
+
   .user__input {
     padding-bottom: 13px;
   }

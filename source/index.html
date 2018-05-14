@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <a class="main-nav__logo">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
           </picture>
@@ -96,7 +96,7 @@
               </table>
             </div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/-triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="product-week__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
             </picture>
@@ -165,7 +165,7 @@
           <div class="contacts__map">
             <div class="contacts__map-google" id="map"></div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Как до нас добраться">
             </picture>
@@ -218,7 +218,6 @@
       </div>
     </footer>
     <section class="cart">
-      <div class="cart__wrapper">
         <h3 class="cart__title title">Добавить в корзину</h3>
         <form class="cart__form">
           <fieldset class="cart__text">Выберите размер:</fieldset>
@@ -238,9 +237,8 @@
           </ul>
           <button class="cart__add button button--order" type="submit">Добавить</button>
         </form>
-      </div>
     </section>
-
+    <div class="overlay"></div>
 
     <script type="text/javascript">
       function initMap() {
@@ -274,6 +272,7 @@
         map.setOptions({styles: styles});
       }
     </script>
+    <script src="js/script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD01W6AL2vWIVDKVwSygLKkhlbMzeCyXAs&callback=initMap&language=en&region=EN">
     </script>
   </body>

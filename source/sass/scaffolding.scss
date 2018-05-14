@@ -7,9 +7,7 @@ body {
   line-height: $base-line-height;
   font-weight: 700;
   color: $color-black;
-  outline: 1px solid red;
   width: 320px;
-
 }
 
 a {
@@ -20,6 +18,20 @@ a {
 .container {
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.overlay-show {
+  &::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($color-white, 0.9);
+    z-index: 4;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,23 +57,22 @@ a {
       height: 18px;
       background: url("../img/bg-zigzag-fill.svg") repeat-x -8px top;
       background-size: auto 23px;
-      z-index: 5000;
+      z-index: 5;
     }
   }
 }
 
-  .main-page .intro {
-    background-color: #f9f9f9;
-  }
+.main-page .intro {
+  background-color: #f9f9f9;
+}
 
 @media (min-width: $desktop-width) {
   .container {
     width: 1150px;
   }
 
-  .page-wrapper {
-      &::before {
-      height: 18px;
+  .intro {
+    &::before {
       background: url("../img/bg-zigzag-fill.svg") repeat-x top;
       background-size: auto 38px;
     }

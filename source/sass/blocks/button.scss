@@ -4,7 +4,7 @@
   min-width: 260px;
 
   @include indent-reset;
-  padding: 15px;
+  padding: 15px 0;
   font: inherit;
   line-height: $base-line-height-small;
   text-transform: uppercase;
