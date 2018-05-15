@@ -5,42 +5,36 @@ var overlay = document.querySelector(".overlay");
 var cartAdd = document.querySelector(".cart__add");
 var cancelScroll = document.querySelector("body");
 
+function overlayCloseHandler(evt) {
+  evt.preventDefault();
+  cart.classList.remove("cart-show");
+  overlay.classList.remove("overlay-show");
+  cancelScroll.style.overflow = "visible";
+};
+
+function cartShow(evt) {
+  evt.preventDefault();
+  cart.classList.add("cart-show");
+  overlay.classList.add("overlay-show");
+  cancelScroll.style.overflow = "hidden";
+};
+
 if (overlay) {
-  overlay.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cart.classList.remove("cart-show");
-    overlay.classList.remove("overlay-show");
-    cancelScroll.style.overflow = "visible";
-  });
-}
+  overlay.addEventListener("click", overlayCloseHandler);
+};
 
 if (link) {
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cart.classList.add("cart-show");
-    overlay.classList.add("overlay-show");
-    cancelScroll.style.overflow = "hidden";
-  });
-}
+  link.addEventListener("click", cartShow);
+};
 
 if (iconCart) {
   for (var i = 0; i < iconCart.length; i++) {
-    iconCart[i].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      cart.classList.add("cart-show");
-      overlay.classList.add("overlay-show");
-      cancelScroll.style.overflow = "hidden";
-    });
+    iconCart[i].addEventListener("click", cartShow);
   }
-}
+};
 
 if (cartAdd) {
-  cartAdd.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cart.classList.remove("cart-show");
-    overlay.classList.remove("overlay-show");
-    cancelScroll.style.overflow = "visible";
-  });
+  cartAdd.addEventListener("click", overlayCloseHandler);
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -59,9 +53,11 @@ var userMenu = document.querySelector(".main-nav__user");
 var mainMenu = document.querySelector(".main-nav__main");
 var btnMenu = document.querySelector(".main-nav__toggle");
 
-menuToggle.addEventListener ("click", function (evt) {
+function toggleMenu(evt) {
   evt.preventDefault();
   userMenu.classList.toggle("main-nav--show");
   mainMenu.classList.toggle("main-nav--show");
   btnMenu.classList.toggle("main-nav__toggle--open");
-});
+}
+
+menuToggle.addEventListener ("click", toggleMenu);
