@@ -247,39 +247,6 @@
         </form>
     </section>
     <div class="overlay"></div>
-
-    <script type="text/javascript">
-      function initMap() {
-        var uluru = {lat: 59.938771377472285, lng: 30.32327415000009};
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 16.8,
-          center: uluru,
-          disableDefaultUI: true
-        });
-        var marker = new google.maps.Marker({
-          position: mark = {lat: 59.938771377472285, lng: 30.32327415000009},
-          map: map,
-          icon: {
-          url: "img/icon-map-pin.svg",
-          scaledSize: new google.maps.Size(67, 100)
-          }
-        });
-        var styles = [
-          { "featureType": "landscape.man_made",
-            "elementType": "geometry.fill",
-            "stylers": [ { "gamma": "0.3" } ]
-            },
-          { "featureType": "all",
-            "elementType": "labels.text.fill",
-            "stylers": [ { "color": "#2e1403" } ]
-            },
-          { "featureType": "all",
-            "elementType": "labels.icon",
-            "stylers": [ { "hue": "#2e1403"} ]
-            }];
-        map.setOptions({styles: styles});
-      }
-    </script>
     <script src="js/script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD01W6AL2vWIVDKVwSygLKkhlbMzeCyXAs&callback=initMap&language=en&region=EN">
     </script>
