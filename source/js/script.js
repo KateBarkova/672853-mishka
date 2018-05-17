@@ -5,23 +5,22 @@ var overlay = document.querySelector(".overlay");
 var cartAdd = document.querySelector(".cart__add");
 var cancelScroll = document.querySelector("body");
 
-function overlayCloseHandler(evt) {
-  evt.preventDefault();
-  cart.classList.remove("cart-show");
-  overlay.classList.remove("overlay-show");
-  cancelScroll.style.overflow = "visible";
-};
-
-function cartShow(evt) {
-  evt.preventDefault();
-  cart.classList.add("cart-show");
-  overlay.classList.add("overlay-show");
-  cancelScroll.style.overflow = "hidden";
-};
-
 if (cartAdd) {
+  function overlayCloseHandler(evt) {
+    evt.preventDefault();
+    cart.classList.remove("cart-show");
+    overlay.classList.remove("overlay-show");
+    cancelScroll.style.overflow = "visible";
+  };
+
+  function cartShow(evt) {
+    evt.preventDefault();
+    cart.classList.add("cart-show");
+    overlay.classList.add("overlay-show");
+    cancelScroll.style.overflow = "hidden";
+  };
+
   overlay.addEventListener("click", overlayCloseHandler);
-  cartAdd.addEventListener("click", overlayCloseHandler);
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
