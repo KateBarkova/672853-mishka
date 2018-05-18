@@ -5,16 +5,12 @@
   align-items: center;
   justify-content: space-between;
 
-  svg {
-    fill: $color-blue;
-  }
-
-  &:hover svg,
-  &:focus svg {
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
     fill: #46c1ae;
   }
 
-  &:active svg {
+  &:active .copyright__icon {
     fill: #46c1ae;
     opacity: 0.3;
   }
@@ -24,11 +20,9 @@
   }
 }
 
-.copyright__link {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+.copyright__icon {
+    fill: $color-blue;
+  }
 
 .copyright__text {
   display: inline-block;

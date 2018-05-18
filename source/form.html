@@ -65,7 +65,9 @@
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="type form__fieldset">
           <div class="form__wrapper container">
-            <legend class="type__title form__title">Тип</legend>
+            <legend class="type__title form__title">
+              <span>Тип</span>
+            </legend>
             <ul class="type__list form__list">
               <li class="type__item">
                 <input class="type__input visually-hidden" type="radio" name="type" id="type-decor" value="decor" checked>
@@ -80,7 +82,9 @@
         </fieldset>
         <fieldset class="color form__fieldset">
           <div class="form__wrapper form__wrapper--big container">
-            <legend class="color__title form__title">Цвет</legend>
+            <legend class="color__title form__title">
+              <span>Цвет</span>
+            </legend>
             <ul class="color__list  form__list">
               <li class="color__item">
                 <input class="color__input visually-hidden" type="checkbox" name="white" id="color-white" checked>
@@ -111,7 +115,9 @@
         </fieldset>
         <fieldset class="user form__fieldset">
           <div class="form__wrapper container">
-            <legend class="user__title form__title">ФИО</legend>
+            <legend class="user__title form__title">
+              <span>ФИО</span>
+            </legend>
             <div class="form__container">
               <p class="user__item">
                 <label class="user__label" for="user-name">Имя:</label>
@@ -130,7 +136,9 @@
         </fieldset>
         <fieldset class="phone form__fieldset">
           <div class="form__wrapper phone__wrapper container">
-            <legend class="phone__title form__title">Тел</legend>
+            <legend class="phone__title form__title">
+              <span>Тел</span>
+            </legend>
             <label class="visually-hidden" for="user-phone">Тел</label>
             <input class="phone__input" type="tel" name="user-phone" id="user-phone" placeholder="+7 XXX XX XX*" required>
             <svg class="phone__icon" width="25px" height="24px">
@@ -140,7 +148,9 @@
         </fieldset>
         <fieldset class="email form__fieldset">
           <div class="form__wrapper email__wrapper container">
-            <legend class="email__title form__title">E-mail</legend>
+            <legend class="email__title form__title">
+              <span>E-mail</span>
+            </legend>
             <label class="visually-hidden" for="user-email">E-mail</label>
             <input class="email__input" type="email" name="user-email" id="user-email" placeholder="Ваш Email*" required>
             <svg class="email__icon" width="32px" height="32px">
@@ -194,14 +204,12 @@
           </a>
           </li>
         </ul>
-        <p class="footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive"class="footer__copyright copyright" aria-label="Переход на сайт в HTML Academy">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт в HTML Academy">
-            <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#html-academy"></use>
-            </svg>
-          </a>
-        </p>
+          <svg class="copyright__icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#html-academy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
     <script src="js/script.js"></script>
