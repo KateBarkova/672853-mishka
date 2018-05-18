@@ -20,6 +20,14 @@ if (cartAdd) {
     cancelScroll.style.overflow = "hidden";
   };
 
+  if (link) {
+    link.addEventListener("click", cartShow);
+  }
+
+  for (var i = 0; i < iconCart.length; i++) {
+    iconCart[i].addEventListener("click", cartShow);
+  }
+
   overlay.addEventListener("click", overlayCloseHandler);
 
   window.addEventListener("keydown", function (evt) {
@@ -29,18 +37,17 @@ if (cartAdd) {
       }
     }
   });
-
-  for (var i = 0; i < iconCart.length; i++) {
-    iconCart[i].addEventListener("click", cartShow);
-  }
-
-  link.addEventListener("click", cartShow);
 }
 
 var menuToggle = document.querySelector(".main-nav__toggle");
 var userMenu = document.querySelector(".main-nav__user");
 var mainMenu = document.querySelector(".main-nav__main");
 var btnMenu = document.querySelector(".main-nav__toggle");
+var mainNav = document.querySelector(".main-nav");
+
+mainMenu.classList.remove('main-nav--show');
+userMenu.classList.remove('main-nav--show');
+menuToggle.classList.remove('main-nav--no-js');
 
 function toggleMenu(evt) {
   evt.preventDefault();
