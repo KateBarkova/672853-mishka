@@ -20,12 +20,12 @@
     margin: 0 12px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: #46c1ae;
   }
 
-  &:active {
+  &:active svg {
     fill: #46c1ae;
     opacity: 0.3;
   }
