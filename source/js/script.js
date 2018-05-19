@@ -43,7 +43,6 @@ var menuToggle = document.querySelector(".main-nav__toggle");
 var userMenu = document.querySelector(".main-nav__user");
 var mainMenu = document.querySelector(".main-nav__main");
 var btnMenu = document.querySelector(".main-nav__toggle");
-var mainNav = document.querySelector(".main-nav");
 
 mainMenu.classList.remove('main-nav--show');
 userMenu.classList.remove('main-nav--show');
