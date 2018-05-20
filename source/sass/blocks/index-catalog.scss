@@ -78,7 +78,7 @@
 
     &:hover,
     &:focus {
-      padding-bottom: 38px;
+      padding-bottom: 37px;
     }
   }
 }
@@ -86,7 +86,7 @@
 
 @media (min-width: $desktop-width) {
   .index-catalog__link {
-    padding: 28px 360px 32px 35px;
+    padding-right: 360px;
     background-position: 92% center;
   }
 }

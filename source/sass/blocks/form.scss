@@ -18,16 +18,23 @@
   line-height: 16px;
   color: $color-blue;
   text-transform: uppercase;
-  position: relative;
+  display: flex;
+}
+
+.form__title span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &::after {
     content: "";
-    position: absolute;
-    min-width: 75%;
+    display: block;
+    min-width: 20px;
     height: 2px;
+    margin-left: 25px;
+    flex-grow: 1;
     background-color: #62d1ba;
-    top: 50%;
-    right: 0;
+    color: white;
   }
 }
 
@@ -72,10 +79,10 @@
   .form__title {
     min-width: 167px;
     padding-left: 0;
+  }
 
-    &::after {
-      display: none;
-    }
+  .form__title span::after {
+    display: none;
   }
 
   .form__container {

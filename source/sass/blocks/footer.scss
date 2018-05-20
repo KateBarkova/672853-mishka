@@ -21,12 +21,12 @@
   .footer__logo {
     display: block;
 
-    &[href]:hover,
-    &[href]:focus {
+    &[href]:hover svg,
+    &[href]:focus svg {
       fill: #46c1ae;
     }
 
-    &[href]:active {
+    &[href]:active svg {
       fill: #46c1ae;
       opacity: 0.3;
     }

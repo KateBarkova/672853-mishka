@@ -4,6 +4,7 @@
 }
 
 .main-nav__toggle {
+  display: block;
   position: absolute;
   right: 9.3%;
   top: 28px;
@@ -17,6 +18,10 @@
   &--open {
     background: url("../img/icon-menu-close.svg") no-repeat center;
   }
+}
+
+.main-nav--no-js {
+  display: none;
 }
 
 .main-nav__logo {
