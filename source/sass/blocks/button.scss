@@ -3,7 +3,7 @@
   box-sizing: border-box;
   min-width: 260px;
 
-  @include indent-reset;
+  margin: 0;
   padding: 15px 0;
   font: inherit;
   line-height: $base-line-height-small;
@@ -39,7 +39,7 @@
 
     &:active {
       background-color: transparent;
-      opacity: 0.3;
+      opacity: $alpha;
     }
   }
 

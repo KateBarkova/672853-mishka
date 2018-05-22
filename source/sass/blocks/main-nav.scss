@@ -36,7 +36,7 @@
   }
 
   &[href]:active {
-    opacity: 0.3;
+    opacity: $alpha;
   }
 }
 
@@ -76,7 +76,7 @@
     align-self: center;
 
     @include indent-reset;
-    @include font(15px, $base-line-height-small);
+    @include font(15px, $base-line-height);
     font-weight: 400;
     color: $base-color-text;
   }

@@ -46,7 +46,7 @@
     padding: 0;
   }
 
-  .about-us__list {
+  .about-us__wrapper {
     display: flex;
   }
 
@@ -57,7 +57,7 @@
     background-position: left 55px;
   }
 
-  .about-us__wrapper {
+  .about-us__list {
     &--small {
       flex-basis: 240px;
       box-sizing: border-box;
@@ -79,13 +79,13 @@
     padding: 100px 0 12px;
   }
 
-  .about-us__wrapper {
+  .about-us__list {
     &--small {
       flex-basis: 260px;
     }
   }
 
-  .about-us__wrapper--small .about-us__item {
+  .about-us__list--small .about-us__item {
     background-position: 10px 50px;
   }
 }

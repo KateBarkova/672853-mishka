@@ -35,7 +35,7 @@
                 <use xlink:href="img/sprite.svg#icon--search"></use>
               </svg>
               Поиск по сайту
-          </a>
+            </a>
           </li>
           <li class="user-menu__item">
             <a href="#" class="user-menu__link">
@@ -70,7 +70,6 @@
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
-
                 <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                 <img class="product__photo" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Фото товара">
@@ -98,7 +97,6 @@
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
-
                 <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                 <img class="product__photo" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Фото товара">
@@ -126,7 +124,6 @@
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
-
                 <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                 <img class="product__photo" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Фото товара">
@@ -153,12 +150,13 @@
       <section class="making container">
         <div class="making__wrapper">
           <h2 class="making__title">Процесс производства</h2>
-          <video class="making__video"><source src="#"></video>
+          <video class="making__video">
+            <source src="#">
+          </video>
           <picture class="making__image">
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
@@ -196,7 +194,7 @@
             <a href="#" class="social__btn social__btn--twitter">
               Твиттер
               <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon--twitter"></use>
+                <use xlink:href="img/sprite.svg#icon--twitter"></use>
               </svg>
             </a>
           </li>
@@ -210,25 +208,25 @@
       </div>
     </footer>
     <section class="cart">
-        <h3 class="cart__title title">Добавить в корзину</h3>
-        <form class="cart__form">
-          <fieldset class="cart__text">Выберите размер:</fieldset>
-          <ul class="cart__size-list">
-            <li class="cart__item">
-              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-s" value="size s" checked>
-              <label class=" cart__size cart__size--s" for="size-s">S</label>
-            </li>
-            <li class="cart__item">
-              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-m" value="size m">
-              <label class="cart__size cart__size--m" for="size-m">M</label>
-            </li>
-            <li class="cart__item">
-              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-l" value="size l">
-              <label class="cart__size cart__size--l" for="size-l">L</label>
-            </li>
-          </ul>
-          <button class="cart__add button button--order" type="submit">Добавить</button>
-        </form>
+      <h3 class="cart__title title">Добавить в корзину</h3>
+      <form class="cart__form">
+        <fieldset class="cart__text">Выберите размер:</fieldset>
+        <ul class="cart__size-list">
+          <li class="cart__item">
+            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-s" value="size s" checked>
+            <label class=" cart__size cart__size--s" for="size-s">S</label>
+          </li>
+          <li class="cart__item">
+            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-m" value="size m">
+            <label class="cart__size cart__size--m" for="size-m">M</label>
+          </li>
+          <li class="cart__item">
+            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-l" value="size l">
+            <label class="cart__size cart__size--l" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="cart__add button button--order" type="submit">Добавить</button>
+      </form>
     </section>
     <div class="overlay"></div>
     <script src="js/script.min.js"></script>

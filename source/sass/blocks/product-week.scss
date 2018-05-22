@@ -46,9 +46,10 @@
 }
 
 .product-week__cost {
-  @include indent-reset;
+  padding: 0;
   margin: 17px 0 26px;
   text-align: center;
+  color: $base-color-text;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,7 +64,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    margin: 50px 50px;
+    margin: 50px;
     margin-top: 0;
     padding: 45px 0 65px;
   }

@@ -69,7 +69,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: $alpha;
     fill: #63d1bb;
   }
 }
