@@ -41,7 +41,7 @@
 
 .product-week__cell {
   min-width: 95px;
-  padding: 10px 0;
+  padding: 9px 0 10px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -116,10 +116,10 @@
 
   .product-week__container {
     margin: 0 50px;
-    padding-top: 125px;
+    padding-top: 123px;
     padding-bottom: 95px;
-    background: url("../../img/bg-zigzag-line.svg") repeat-x bottom;
-    background-size: auto 22px;
+    background: url("../../img/bg-zigzag-line.svg") repeat-x -15px bottom;
+    background-size: auto 21px;
   }
 
   .product-week__name {
