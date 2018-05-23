@@ -49,6 +49,7 @@
     margin: 0;
     margin-bottom: 33px;
     align-items: baseline;
+    min-height: 42px;
   }
 
   .user__label {
@@ -59,12 +60,13 @@
   .user__input {
     padding: 0 0 15px 15px;
     font-size: 19px;
+    line-height: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user {
-    margin: 15px 0 17px;
+    margin: 0 0 15px;
   }
 
   .user__item {

@@ -1,5 +1,6 @@
 .about-us {
   @include section-padding;
+  padding-bottom: 27px;
 }
 
 .about-us__list {
@@ -42,12 +43,13 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin: 50px;
+    margin: 45px 50px 50px;
     padding: 0;
   }
 
   .about-us__wrapper {
     display: flex;
+    min-height: 468px;
   }
 
   .about-us__item {

@@ -14,11 +14,11 @@
     content: "";
     position: absolute;
     display: block;
-    width: 62px;
+    width: 70px;
     height: 62px;
     right: 5%;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: left center;
     opacity: 0.5;
   }
 
@@ -27,6 +27,7 @@
 
     &::before {
       background-image: url("../img/icon-interior.svg");
+      background-position: 20% center;
     }
   }
 
