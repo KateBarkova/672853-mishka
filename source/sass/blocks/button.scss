@@ -3,8 +3,8 @@
   box-sizing: border-box;
   min-width: 260px;
 
-  @include indent-reset;
-  padding: 15px 0;
+  margin: 0;
+  padding: 15px 0 14px;
   font: inherit;
   line-height: $base-line-height-small;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
 
     &:active {
       background-color: transparent;
-      opacity: 0.3;
+      opacity: $alpha;
     }
   }
 

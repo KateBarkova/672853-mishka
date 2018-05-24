@@ -15,6 +15,9 @@
 
 .feedback__text {
   @include indent-reset;
+
+  min-height: 355px;
+
   @include font(15px, $base-line-height-big);
   font-weight: 400;
   color: $base-color-text;
@@ -22,6 +25,7 @@
 
 .feedback__text p {
   margin: 0 0 25px;
+  min-height: 270px;
 }
 
 .feedback__username {
@@ -111,10 +115,12 @@
     display: flex;
     flex-direction: column;
     font-size: $base-font-size;
+    min-height: auto;
   }
 
   .feedback__text p {
     margin: 0 0 60px;
+    min-height: auto;
   }
 
   .feedback__wrapper {

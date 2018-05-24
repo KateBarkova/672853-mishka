@@ -12,11 +12,11 @@
 
   &:active .copyright__icon {
     fill: #46c1ae;
-    opacity: 0.3;
+    opacity: $alpha;
   }
 
   &:active .copyright__text {
-    opacity: 0.3;
+    opacity: $alpha;
   }
 }
 

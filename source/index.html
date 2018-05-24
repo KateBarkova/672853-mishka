@@ -35,7 +35,7 @@
                 <use xlink:href="img/sprite.svg#icon--search"></use>
               </svg>
               Поиск по сайту
-          </a>
+            </a>
           </li>
           <li class="user-menu__item">
             <a href="#" class="user-menu__link">
@@ -80,7 +80,7 @@
             <h3 class="product-week__name title">Вязаные корзинки</h3>
             <h4 class="product-week__title">Товар недели</h4>
             <div class="product-week__wrapper">
-              <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+              <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
               <table class="product-week__property">
                 <tr class="product-week__row">
                   <td class="product-week__cell">Цвет:</td>
@@ -100,7 +100,6 @@
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="product-week__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
@@ -116,18 +115,18 @@
         </section>
         <section class="about-us">
           <h3 class="about-us__title title">Коротко о нас:</h3>
-          <ul class="about-us__list">
-            <div class="about-us__wrapper about-us__wrapper--small">
+          <div class="about-us__wrapper">
+            <ul class="about-us__list about-us__list--small">
               <li class="about-us__item about-us__item--material">Экологически чистые&nbsp;материалы</li>
               <li class="about-us__item about-us__item--style">Скандинавский стиль по&nbsp;российской цене</li>
               <li class="about-us__item about-us__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
-            </div>
-            <div class="about-us__wrapper  about-us__wrapper--big">
+            </ul>
+            <ul class="about-us__list about-us__list--big">
               <li class="about-us__item about-us__item--handmade">Связано вручную с любовью&nbsp;и умилением</li>
               <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
               <li class="about-us__item about-us__item--pack">Поставляется в подарочной&nbsp;упаковке</li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </section>
         <section class="feedback">
           <h3 class="feedback__title title">Отзывы</h3>
@@ -163,7 +162,8 @@
                 <td class="contacts__cell">адрес:</td>
                 <td class="contacts__cell contacts__cell--address">г. Санкт-Петербург,
                   ул.&nbsp;Большая Конюшенная,
-                  д.&nbsp;19/8, офис 101</td>
+                  д.&nbsp;19/8, офис 101
+                </td>
               </tr>
             </table>
           </div>
@@ -173,7 +173,6 @@
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Как до нас добраться">
@@ -211,7 +210,7 @@
             <a href="#" class="social__btn social__btn--twitter">
               Твиттер
               <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon--twitter"></use>
+                <use xlink:href="img/sprite.svg#icon--twitter"></use>
               </svg>
             </a>
           </li>
@@ -225,30 +224,29 @@
       </div>
     </footer>
     <section class="cart">
-        <h3 class="cart__title title">Добавить в корзину</h3>
-        <form class="cart__form">
-          <fieldset class="cart__text">Выберите размер:</fieldset>
-          <ul class="cart__size-list">
-            <li class="cart__item">
-              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-s" value="size s" checked>
-              <label class=" cart__size cart__size--s" for="size-s">S</label>
-            </li>
-            <li class="cart__item">
-              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-m" value="size m">
-              <label class="cart__size cart__size--m" for="size-m">M</label>
-            </li>
-            <li class="cart__item">
-              <input class="cart__input visually-hidden" type="radio" name="cart" id="size-l" value="size l">
-              <label class="cart__size cart__size--l" for="size-l">L</label>
-            </li>
-          </ul>
-          <button class="cart__add button button--order" type="submit">Добавить</button>
-        </form>
+      <h3 class="cart__title title">Добавить в корзину</h3>
+      <form class="cart__form">
+        <p class="cart__text">Выберите размер:</p>
+        <ul class="cart__size-list">
+          <li class="cart__item">
+            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-s" value="size s" checked>
+            <label class=" cart__size cart__size--s" for="size-s">S</label>
+          </li>
+          <li class="cart__item">
+            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-m" value="size m">
+            <label class="cart__size cart__size--m" for="size-m">M</label>
+          </li>
+          <li class="cart__item">
+            <input class="cart__input visually-hidden" type="radio" name="cart" id="size-l" value="size l">
+            <label class="cart__size cart__size--l" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="cart__add button button--order" type="submit">Добавить</button>
+      </form>
     </section>
     <div class="overlay"></div>
     <script src="js/script.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD01W6AL2vWIVDKVwSygLKkhlbMzeCyXAs&callback=initMap&language=en&region=EN">
-    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD01W6AL2vWIVDKVwSygLKkhlbMzeCyXAs&callback=initMap&language=en&region=EN"></script>
     <script defer src="js/svgxuse.min.js"></script>
   </body>
 </html>

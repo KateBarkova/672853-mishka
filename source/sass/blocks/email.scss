@@ -50,24 +50,26 @@
 
 @media (min-width: $tablet-width) {
   .email {
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     background-color: $color-grey;
     margin-bottom: 50px;
   }
 
   .email__wrapper {
     padding-top: 10px;
+    min-height: 55px;
   }
 
   .email__input {
     padding: 0 0 13px 15px;
     font-size: 19px;
+    line-height: 18px;
     background-color: $color-grey;
   }
 
   .email__icon {
     right: 70px;
-    top: 30%;
+    top: 20%;
   }
 }
 
@@ -77,7 +79,7 @@
   }
 
   .email__icon {
-    right: 225px;
-    top: 30%;
+    right: 230px;
+    top: 17%;
   }
 }
