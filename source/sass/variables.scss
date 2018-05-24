@@ -20,7 +20,7 @@ $alpha: 0.3;
 $color-blue-underline: #62d1ba;
 
 $color-hover: rgba(0, 0, 0, 0.6);
-$color-active: rgba(0, 0, 0, 0.3);
+$color-active: rgba(0, 0, 0, $alpha);
 
 $base-shadow: 0 1px 0 0 #ececec;
 
