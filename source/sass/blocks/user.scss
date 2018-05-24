@@ -34,8 +34,11 @@
   }
 }
 
+.user__input:-ms-input-placeholder {
+  color: rgba($base-color-text, $alpha);
+}
+
 .user__input::placeholder {
-  font-weight: 400;
   color: rgba($base-color-text, $alpha);
 }
 

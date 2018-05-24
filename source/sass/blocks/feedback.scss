@@ -116,6 +116,7 @@
     flex-direction: column;
     font-size: $base-font-size;
     min-height: auto;
+    max-width: 670px;
   }
 
   .feedback__text p {
