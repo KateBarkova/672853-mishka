@@ -19,6 +19,7 @@
   border: none;
   border-bottom: 2px solid $color-black;
   font: inherit;
+  font-weight: 400;
   color: $base-color-text;
   cursor: pointer;
 
@@ -31,9 +32,12 @@
   }
 }
 
+.phone__input:-ms-input-placeholder {
+  color: rgba($base-color-text, $alpha);
+}
+
 .phone__input::placeholder {
   color: rgba($base-color-text, $alpha);
-  font-weight: 400;
 }
 
 .phone__icon {
