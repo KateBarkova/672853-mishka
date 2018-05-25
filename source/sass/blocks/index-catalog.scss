@@ -14,9 +14,9 @@
     content: "";
     position: absolute;
     display: block;
-    width: 70px;
+    width: 75px;
     height: 62px;
-    right: 5%;
+    right: 4%;
     background-repeat: no-repeat;
     background-position: left center;
     opacity: 0.5;
@@ -76,10 +76,6 @@
 
     @include font(20px, $base-line-height-big);
 
-    &::before {
-      right: 10%;
-    }
-
     &:hover,
     &:focus {
       padding-bottom: 37px;
@@ -92,8 +88,10 @@
   .index-catalog__link {
     padding-right: 360px;
 
-    &::before {
-      right: 7%;
+    &--interior {
+      &::before {
+        background-position: 60% center;
+      }
     }
   }
 }

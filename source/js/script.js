@@ -46,7 +46,7 @@ var btnMenu = document.querySelector(".main-nav__toggle");
 
 mainMenu.classList.remove('main-nav--show');
 userMenu.classList.remove('main-nav--show');
-menuToggle.classList.remove('main-nav--no-js');
+menuToggle.classList.remove('main-nav__toggle--no-js');
 
 function toggleMenu(evt) {
   evt.preventDefault();
