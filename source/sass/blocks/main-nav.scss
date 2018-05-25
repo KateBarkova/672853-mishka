@@ -50,7 +50,8 @@
   display: none;
 }
 
-.main-nav--show {
+.main-nav__user--show,
+.main-nav__main--show {
   display: block;
 }
 
