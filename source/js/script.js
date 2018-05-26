@@ -8,15 +8,15 @@ var cancelScroll = document.querySelector("body");
 if (cartAdd) {
   function overlayCloseHandler(evt) {
     evt.preventDefault();
-    cart.classList.remove("cart-show");
-    overlay.classList.remove("overlay-show");
+    cart.classList.remove("cart--show");
+    overlay.classList.remove("overlay--show");
     cancelScroll.style.overflow = "visible";
   };
 
   function cartShow(evt) {
     evt.preventDefault();
-    cart.classList.add("cart-show");
-    overlay.classList.add("overlay-show");
+    cart.classList.add("cart--show");
+    overlay.classList.add("overlay--show");
     cancelScroll.style.overflow = "hidden";
   };
 
@@ -32,7 +32,7 @@ if (cartAdd) {
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (cart.classList.contains("cart-show")) {
+      if (cart.classList.contains("cart--show")) {
         overlayCloseHandler(evt);
       }
     }
@@ -44,14 +44,14 @@ var userMenu = document.querySelector(".main-nav__user");
 var mainMenu = document.querySelector(".main-nav__main");
 var btnMenu = document.querySelector(".main-nav__toggle");
 
-mainMenu.classList.remove('main-nav--show');
-userMenu.classList.remove('main-nav--show');
-menuToggle.classList.remove('main-nav--no-js');
+mainMenu.classList.remove('main-nav__main--show');
+userMenu.classList.remove('main-nav__user--show');
+menuToggle.classList.remove('main-nav__toggle--no-js');
 
 function toggleMenu(evt) {
   evt.preventDefault();
-  userMenu.classList.toggle("main-nav--show");
-  mainMenu.classList.toggle("main-nav--show");
+  userMenu.classList.toggle("main-nav__user--show");
+  mainMenu.classList.toggle("main-nav__main--show");
   btnMenu.classList.toggle("main-nav__toggle--open");
 }
 

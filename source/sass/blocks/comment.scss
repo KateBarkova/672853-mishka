@@ -25,6 +25,14 @@
   }
 }
 
+.comment__textarea:-ms-input-placeholder {
+  color: rgba($base-color-text, $alpha);
+}
+
+.comment__textarea::placeholder {
+  color: rgba($base-color-text, $alpha);
+}
+
 @media (min-width: $tablet-width) {
   .comment {
     margin-bottom: 52px;

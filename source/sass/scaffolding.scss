@@ -20,7 +20,7 @@ a {
   box-sizing: border-box;
 }
 
-.overlay-show {
+.overlay--show {
   &::before {
     content: "";
     display: block;

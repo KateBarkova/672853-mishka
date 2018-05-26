@@ -152,9 +152,13 @@
     }
   }
 
+  .feedback__text {
+    max-width: 780px;
+  }
+
+
   .feedback__text p {
     margin-bottom: 42px;
-    max-width: 780px;
   }
 
   .feedback__username {
